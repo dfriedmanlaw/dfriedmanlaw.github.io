@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
   }, [isMobileMenuOpen]);
 
   const styles = {
-    bg: isScrolled ? 'bg-white/90 backdrop-blur-md border-tech-border shadow-sm' : 'bg-transparent border-transparent',
+    bg: (isScrolled || isMobileMenuOpen) ? 'bg-white/95 backdrop-blur-md border-tech-border shadow-sm' : 'bg-transparent border-transparent',
     textMain: 'text-tech-text',
     textMuted: 'text-tech-muted',
     primary: 'text-tech-primary',
@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
 
   return (
     <header 
-      className={`sticky top-0 left-0 right-0 z-40 transition-all duration-300 border-b ${styles.bg} py-4`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${styles.bg} py-4`}
     >
       <div className="max-w-[1440px] mx-auto px-6 flex items-center justify-between relative z-50">
         {/* Logo Area */}
