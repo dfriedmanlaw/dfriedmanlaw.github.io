@@ -25,7 +25,7 @@ const MainLayout = () => {
 function App() {
   return (
     <Router>
-        <div className="min-h-screen bg-tech-bg text-tech-text font-sans selection:bg-tech-primary selection:text-white flex flex-col pt-[72px]">
+        <div className="min-h-screen bg-tech-bg text-tech-text font-sans selection:bg-tech-primary selection:text-white flex flex-col pt-24">
             <Routes>
                 {/* Main Site Layout */}
                 <Route element={<MainLayout />}>

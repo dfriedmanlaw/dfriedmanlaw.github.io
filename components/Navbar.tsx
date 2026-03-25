@@ -64,18 +64,17 @@ const Navbar: React.FC = () => {
   };
 
   return (
+    <>
     <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${styles.bg} py-4`}
+      className={`fixed top-0 left-0 right-0 z-[110] transition-all duration-300 border-b ${styles.bg} py-4`}
     >
-      <div className="max-w-[1440px] mx-auto px-6 flex items-center justify-between relative z-50">
+      <div className="max-w-[1440px] mx-auto px-6 flex items-center justify-between relative z-[70]">
         {/* Logo Area */}
-        <Link to="/" className="flex flex-col group cursor-pointer">
-            <div className="flex items-center gap-2">
-                <span className={`font-sans text-[10px] ${styles.primary} uppercase tracking-widest font-bold`}>
-                    Law Office of
-                </span>
-            </div>
-            <h1 className={`text-2xl font-serif font-bold tracking-tight ${styles.textMain}`}>
+        <Link to="/" className="flex flex-col group cursor-pointer relative z-[70]">
+            <span className={`font-sans text-[10px] ${styles.primary} uppercase tracking-widest font-bold leading-none mb-1`}>
+                Law Office of
+            </span>
+            <h1 className={`text-2xl font-serif font-bold tracking-tight ${styles.textMain} leading-none`}>
                 David Friedman
             </h1>
         </Link>
@@ -148,7 +147,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Menu Icon */}
         <button 
-            className={`md:hidden ${styles.textMain} p-2 hover:bg-black/5 rounded-md z-50 relative`}
+            className={`md:hidden ${styles.textMain} p-2 hover:bg-black/5 rounded-md z-[70] relative`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
         >
@@ -162,57 +161,58 @@ const Navbar: React.FC = () => {
                 </svg>
             )}
         </button>
-
-        {/* Mobile Menu Overlay */}
-        {isMobileMenuOpen && (
-            <div className="fixed inset-0 bg-white z-40 pt-24 px-6 md:hidden overflow-y-auto flex flex-col">
-                <nav className="flex flex-col space-y-6 pb-12">
-                    {NAV_ITEMS.map((item) => (
-                        <div key={item.label} className="border-b border-tech-border pb-4">
-                            {item.children ? (
-                                <>
-                                    <div className="text-lg font-serif font-bold text-tech-text mb-4">{item.label}</div>
-                                    <div className="pl-4 space-y-3 border-l-2 border-tech-primary/20">
-                                        {item.children.map(child => (
-                                            <Link 
-                                                key={child.label}
-                                                to={child.path}
-                                                className="block text-tech-muted hover:text-tech-primary transition-colors py-1"
-                                            >
-                                                {child.label}
-                                            </Link>
-                                        ))}
-                                    </div>
-                                </>
-                            ) : item.path.startsWith('/#') ? (
-                                <a 
-                                    href={item.path}
-                                    onClick={(e) => handleNavClick(e, item.path)}
-                                    className="text-lg font-serif font-bold text-tech-text block py-1"
-                                >
-                                    {item.label}
-                                </a>
-                            ) : (
-                                <Link 
-                                    to={item.path}
-                                    className="text-lg font-serif font-bold text-tech-text block py-1"
-                                >
-                                    {item.label}
-                                </Link>
-                            )}
-                        </div>
-                    ))}
-                    <div className="pt-4">
-                        <Link to="/intake" className="block w-full">
-                            <Button size="lg" variant="primary" className="w-full justify-center">Evaluate Case</Button>
-                        </Link>
-                    </div>
-                </nav>
-            </div>
-        )}
       </div>
     </header>
-  );
+
+    {/* Mobile Menu Overlay */}
+    {isMobileMenuOpen && (
+        <div className="fixed inset-0 bg-white z-[100] pt-32 px-6 md:hidden overflow-y-auto flex flex-col">
+            <nav className="flex flex-col space-y-6 pb-12">
+                {NAV_ITEMS.map((item) => (
+                    <div key={item.label} className="border-b border-tech-border pb-4">
+                        {item.children ? (
+                            <>
+                                <div className="text-lg font-serif font-bold text-tech-text mb-4">{item.label}</div>
+                                <div className="pl-4 space-y-3 border-l-2 border-tech-primary/20">
+                                    {item.children.map(child => (
+                                        <Link 
+                                            key={child.label}
+                                            to={child.path}
+                                            className="block text-tech-muted hover:text-tech-primary transition-colors py-1"
+                                        >
+                                            {child.label}
+                                        </Link>
+                                    ))}
+                                </div>
+                            </>
+                        ) : item.path.startsWith('/#') ? (
+                            <a 
+                                href={item.path}
+                                onClick={(e) => handleNavClick(e, item.path)}
+                                className="text-lg font-serif font-bold text-tech-text block py-1"
+                            >
+                                {item.label}
+                            </a>
+                        ) : (
+                            <Link 
+                                to={item.path}
+                                className="text-lg font-serif font-bold text-tech-text block py-1"
+                            >
+                                {item.label}
+                            </Link>
+                        )}
+                    </div>
+                ))}
+                <div className="pt-4">
+                    <Link to="/intake" className="block w-full">
+                        <Button size="lg" variant="primary" className="w-full justify-center">Evaluate Case</Button>
+                    </Link>
+                </div>
+            </nav>
+        </div>
+    )}
+</>
+);
 };
 
 export default Navbar;
