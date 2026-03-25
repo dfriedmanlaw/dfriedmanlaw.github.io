@@ -150,6 +150,7 @@ const Navbar: React.FC = () => {
         <button 
             className={`md:hidden ${styles.textMain} p-2 hover:bg-black/5 rounded-md z-50 relative`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle menu"
         >
             {isMobileMenuOpen ? (
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -161,55 +162,55 @@ const Navbar: React.FC = () => {
                 </svg>
             )}
         </button>
-      </div>
 
-      {/* Mobile Menu Overlay */}
-      {isMobileMenuOpen && (
-          <div className="fixed inset-0 bg-white z-40 pt-24 px-6 md:hidden overflow-y-auto">
-              <nav className="flex flex-col space-y-6">
-                  {NAV_ITEMS.map((item) => (
-                      <div key={item.label} className="border-b border-tech-border pb-4">
-                          {item.children ? (
-                              <>
-                                  <div className="text-lg font-serif font-bold text-tech-text mb-4">{item.label}</div>
-                                  <div className="pl-4 space-y-3 border-l-2 border-tech-primary/20">
-                                      {item.children.map(child => (
-                                          <Link 
-                                              key={child.label}
-                                              to={child.path}
-                                              className="block text-tech-muted hover:text-tech-primary transition-colors"
-                                          >
-                                              {child.label}
-                                          </Link>
-                                      ))}
-                                  </div>
-                              </>
-                          ) : item.path.startsWith('/#') ? (
-                              <a 
-                                  href={item.path}
-                                  onClick={(e) => handleNavClick(e, item.path)}
-                                  className="text-lg font-serif font-bold text-tech-text block"
-                              >
-                                  {item.label}
-                              </a>
-                          ) : (
-                              <Link 
-                                  to={item.path}
-                                  className="text-lg font-serif font-bold text-tech-text block"
-                              >
-                                  {item.label}
-                              </Link>
-                          )}
-                      </div>
-                  ))}
-                  <div className="pt-4">
-                      <Link to="/intake" className="block w-full">
-                          <Button size="lg" variant="primary" className="w-full justify-center">Evaluate Case</Button>
-                      </Link>
-                  </div>
-              </nav>
-          </div>
-      )}
+        {/* Mobile Menu Overlay */}
+        {isMobileMenuOpen && (
+            <div className="fixed inset-0 bg-white z-40 pt-24 px-6 md:hidden overflow-y-auto flex flex-col">
+                <nav className="flex flex-col space-y-6 pb-12">
+                    {NAV_ITEMS.map((item) => (
+                        <div key={item.label} className="border-b border-tech-border pb-4">
+                            {item.children ? (
+                                <>
+                                    <div className="text-lg font-serif font-bold text-tech-text mb-4">{item.label}</div>
+                                    <div className="pl-4 space-y-3 border-l-2 border-tech-primary/20">
+                                        {item.children.map(child => (
+                                            <Link 
+                                                key={child.label}
+                                                to={child.path}
+                                                className="block text-tech-muted hover:text-tech-primary transition-colors py-1"
+                                            >
+                                                {child.label}
+                                            </Link>
+                                        ))}
+                                    </div>
+                                </>
+                            ) : item.path.startsWith('/#') ? (
+                                <a 
+                                    href={item.path}
+                                    onClick={(e) => handleNavClick(e, item.path)}
+                                    className="text-lg font-serif font-bold text-tech-text block py-1"
+                                >
+                                    {item.label}
+                                </a>
+                            ) : (
+                                <Link 
+                                    to={item.path}
+                                    className="text-lg font-serif font-bold text-tech-text block py-1"
+                                >
+                                    {item.label}
+                                </Link>
+                            )}
+                        </div>
+                    ))}
+                    <div className="pt-4">
+                        <Link to="/intake" className="block w-full">
+                            <Button size="lg" variant="primary" className="w-full justify-center">Evaluate Case</Button>
+                        </Link>
+                    </div>
+                </nav>
+            </div>
+        )}
+      </div>
     </header>
   );
 };
