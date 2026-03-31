@@ -1,0 +1,33 @@
+# Law Office of David Friedman, PLLC
+
+## Identity
+- **Name:** Law Office of David Friedman, PLLC
+- **Type:** Consumer Protection Law Firm
+- **Location:** White Plains, NY (Serving NY & MN)
+- **Focus:** FCRA (Credit Reporting), FDCPA (Debt Collection), RESPA (Mortgage Servicing), Bankruptcy Litigation
+- **Attorney:** David Friedman, Esq.
+
+## Core Services (Practice Areas)
+- **Mortgage Errors & Servicing Abuse:** Disputes regarding payment misapplication, escrow errors, and Regulation X violations.
+- **Credit Reporting Errors & Identity Theft:** Fixing mixed files, identity theft, and background check errors (FCRA).
+- **Debt Collection Harassment & Rights:** Stopping harassment, zombie debt, and illegal garnishments (FDCPA).
+- **Payment App Fraud & Bank Errors:** Recovering funds from Zelle scams, unauthorized debits, and frozen accounts (EFTA).
+- **Bankruptcy Rights Violations:** Adversary proceedings, discharge violations, and Rule 3002.1 enforcement.
+
+## Key Resources
+- /#/practice/mortgage: Mortgage Errors & Servicing Abuse
+- /#/practice/credit: Credit Reporting Errors & Identity Theft
+- /#/practice/debt: Debt Collection Harassment & Rights
+- /#/practice/fintech: Payment App Fraud & Bank Errors
+- /#/practice/bankruptcy: Bankruptcy Rights Violations
+- /#/resource/mortgage-math-chapter-13: When the Mortgage Math Doesn't Add Up
+- /#/resource/credit-reporting-after-bankruptcy: Cleaning up After Bankruptcy
+- /#/resource/debt-collection-after-bankruptcy: Debt collection after bankruptcy
+
+## Contact
+- **Phone:** (914) 222-3612
+- **Email:** david@davidfriedmanlaw.com
+- **Intake:** /#/intake
+
+## Mission
+To provide high-leverage technical litigation for consumers facing systemic financial errors. We specialize in federal statutory claims that shift the cost of litigation to the banks and bureaus.
