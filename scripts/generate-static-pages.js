@@ -10,16 +10,16 @@ const INDEX_HTML = path.resolve(DIST_DIR, 'index.html');
 
 // Define static routes
 const staticRoutes = [
-  'library',
-  'legal',
-  'intake',
-  'about',
-  'contact',
-  'practice/mortgage',
-  'practice/credit',
-  'practice/debt',
-  'practice/fintech',
-  'practice/bankruptcy',
+  'library/',
+  'legal/',
+  'intake/',
+  'about/',
+  'contact/',
+  'practice/mortgage/',
+  'practice/credit/',
+  'practice/debt/',
+  'practice/fintech/',
+  'practice/bankruptcy/',
 ];
 
 // Function to extract slugs from resourceContent.ts
@@ -30,7 +30,7 @@ function getResourceSlugs() {
   const slugs = [];
   let match;
   while ((match = slugRegex.exec(content)) !== null) {
-    slugs.push(`resource/${match[1]}`);
+    slugs.push(`resource/${match[1]}/`);
   }
   return slugs;
 }

@@ -11,16 +11,16 @@ export const NAV_ITEMS: NavItem[] = [
     label: 'Practice Areas', 
     path: '/#practice',
     children: [
-        { label: 'Mortgage Errors & Servicing Abuse', path: '/practice/mortgage' },
-        { label: 'Credit Reporting Errors & Identity Theft', path: '/practice/credit' },
-        { label: 'Debt Collection Harassment & Rights', path: '/practice/debt' },
-        { label: 'Payment App Fraud & Bank Errors', path: '/practice/fintech' },
-        { label: 'Bankruptcy Rights Violations', path: '/practice/bankruptcy' },
+        { label: 'Mortgage Errors & Servicing Abuse', path: '/practice/mortgage/' },
+        { label: 'Credit Reporting Errors & Identity Theft', path: '/practice/credit/' },
+        { label: 'Debt Collection Harassment & Rights', path: '/practice/debt/' },
+        { label: 'Payment App Fraud & Bank Errors', path: '/practice/fintech/' },
+        { label: 'Bankruptcy Rights Violations', path: '/practice/bankruptcy/' },
     ]
   },
-  { label: 'About', path: '/about' },
-  { label: 'Library', path: '/library' },
-  { label: 'Contact', path: '/contact' },
+  { label: 'About', path: '/about/' },
+  { label: 'Library', path: '/library/' },
+  { label: 'Contact', path: '/contact/' },
 ];
 
 export const DOCKET_ITEMS: DocketItem[] = [

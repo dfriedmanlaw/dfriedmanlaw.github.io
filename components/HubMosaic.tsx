@@ -10,7 +10,7 @@ interface HubCardProps {
 const HubCard: React.FC<HubCardProps> = ({ area }) => {
   return (
     <Link 
-        to={`/practice/${area.id}`}
+        to={`/practice/${area.id}/`}
         className={`group relative p-8 flex flex-col justify-between overflow-hidden transition-all duration-300 bg-white hover:bg-white hover:shadow-xl border border-tech-border hover:border-tech-primary/30 rounded-xl h-full ${
             area.isFeatured ? 'md:col-span-2' : 'col-span-1'
         }`}

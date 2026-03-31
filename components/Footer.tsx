@@ -20,9 +20,9 @@ const Footer: React.FC = () => {
                 <h3 className="text-xs font-sans font-bold text-tech-primary uppercase tracking-widest mb-6 border-b border-tech-border pb-2">Navigation</h3>
                 <ul className="space-y-4 text-tech-muted font-sans text-sm">
                     <li><Link to="/" className="hover:text-tech-primary transition-colors">Home</Link></li>
-                    <li><Link to="/about" className="hover:text-tech-primary transition-colors">About Firm</Link></li>
-                    <li><Link to="/library" className="hover:text-tech-primary transition-colors">Resource Library</Link></li>
-                    <li><Link to="/intake" className="hover:text-tech-primary transition-colors">Case Evaluation</Link></li>
+                    <li><Link to="/about/" className="hover:text-tech-primary transition-colors">About Firm</Link></li>
+                    <li><Link to="/library/" className="hover:text-tech-primary transition-colors">Resource Library</Link></li>
+                    <li><Link to="/intake/" className="hover:text-tech-primary transition-colors">Case Evaluation</Link></li>
                 </ul>
             </div>
 
@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
                     Prior results do not guarantee a similar outcome.
                 </p>
                 <p className="mt-2 text-[10px] uppercase tracking-wider">
-                    <Link to="/legal" className="hover:text-tech-primary transition-colors">Legal Disclaimer & Privacy Policy</Link>
+                    <Link to="/legal/" className="hover:text-tech-primary transition-colors">Legal Disclaimer & Privacy Policy</Link>
                 </p>
             </div>
         </div>

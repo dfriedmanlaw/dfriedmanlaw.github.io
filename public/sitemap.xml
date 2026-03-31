@@ -7,13 +7,13 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/intake</loc>
+    <loc>https://davidfriedmanlaw.com/intake/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/legal</loc>
+    <loc>https://davidfriedmanlaw.com/legal/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -21,31 +21,31 @@
   
   <!-- Practice Areas -->
   <url>
-    <loc>https://davidfriedmanlaw.com/practice/mortgage</loc>
+    <loc>https://davidfriedmanlaw.com/practice/mortgage/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/practice/credit</loc>
+    <loc>https://davidfriedmanlaw.com/practice/credit/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/practice/debt</loc>
+    <loc>https://davidfriedmanlaw.com/practice/debt/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/practice/fintech</loc>
+    <loc>https://davidfriedmanlaw.com/practice/fintech/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/practice/bankruptcy</loc>
+    <loc>https://davidfriedmanlaw.com/practice/bankruptcy/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -53,169 +53,169 @@
 
   <!-- Resources -->
   <url>
-    <loc>https://davidfriedmanlaw.com/resource/notice-of-error-guide</loc>
+    <loc>https://davidfriedmanlaw.com/resource/notice-of-error-guide/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/resource/suing-mortgage-servicer-chapter-13</loc>
+    <loc>https://davidfriedmanlaw.com/resource/suing-mortgage-servicer-chapter-13/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/resource/force-placed-insurance</loc>
+    <loc>https://davidfriedmanlaw.com/resource/force-placed-insurance/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/resource/suspense-accounts</loc>
+    <loc>https://davidfriedmanlaw.com/resource/suspense-accounts/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/resource/transfer-protection</loc>
+    <loc>https://davidfriedmanlaw.com/resource/transfer-protection/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/resource/mixed-files</loc>
+    <loc>https://davidfriedmanlaw.com/resource/mixed-files/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/resource/ny-employment-credit-ban</loc>
+    <loc>https://davidfriedmanlaw.com/resource/ny-employment-credit-ban/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/resource/identity-theft-recovery</loc>
+    <loc>https://davidfriedmanlaw.com/resource/identity-theft-recovery/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/resource/medical-debt-ny</loc>
+    <loc>https://davidfriedmanlaw.com/resource/medical-debt-ny/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/resource/verified-error</loc>
+    <loc>https://davidfriedmanlaw.com/resource/verified-error/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/resource/ai-debt-collection</loc>
+    <loc>https://davidfriedmanlaw.com/resource/ai-debt-collection/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/resource/fair-act-ny</loc>
+    <loc>https://davidfriedmanlaw.com/resource/fair-act-ny/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/resource/stop-collection-calls</loc>
+    <loc>https://davidfriedmanlaw.com/resource/stop-collection-calls/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/resource/calls-at-work</loc>
+    <loc>https://davidfriedmanlaw.com/resource/calls-at-work/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/resource/coerced-debt</loc>
+    <loc>https://davidfriedmanlaw.com/resource/coerced-debt/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/resource/zelle-fraud-defense</loc>
+    <loc>https://davidfriedmanlaw.com/resource/zelle-fraud-defense/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/resource/zelle-authorized-scam</loc>
+    <loc>https://davidfriedmanlaw.com/resource/zelle-authorized-scam/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/resource/ewa-usury</loc>
+    <loc>https://davidfriedmanlaw.com/resource/ewa-usury/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/resource/neobank-freeze</loc>
+    <loc>https://davidfriedmanlaw.com/resource/neobank-freeze/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/resource/treble-damages-bad-faith</loc>
+    <loc>https://davidfriedmanlaw.com/resource/treble-damages-bad-faith/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/resource/automatic-stay</loc>
+    <loc>https://davidfriedmanlaw.com/resource/automatic-stay/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/resource/rule-3002-1-mortgage</loc>
+    <loc>https://davidfriedmanlaw.com/resource/rule-3002-1-mortgage/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/resource/discharge-injunction</loc>
+    <loc>https://davidfriedmanlaw.com/resource/discharge-injunction/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/resource/adversary-proceedings</loc>
+    <loc>https://davidfriedmanlaw.com/resource/adversary-proceedings/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/resource/discharge-fintech-loans</loc>
+    <loc>https://davidfriedmanlaw.com/resource/discharge-fintech-loans/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/resource/mortgage-math-chapter-13</loc>
+    <loc>https://davidfriedmanlaw.com/resource/mortgage-math-chapter-13/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/resource/credit-reporting-after-bankruptcy</loc>
+    <loc>https://davidfriedmanlaw.com/resource/credit-reporting-after-bankruptcy/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidfriedmanlaw.com/resource/debt-collection-after-bankruptcy</loc>
+    <loc>https://davidfriedmanlaw.com/resource/debt-collection-after-bankruptcy/</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
