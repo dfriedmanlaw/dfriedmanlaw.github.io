@@ -31,7 +31,7 @@ const ResourcePage: React.FC = () => {
   const handleReturn = (e: React.MouseEvent) => {
     e.preventDefault();
     if (practiceArea) {
-        navigate(`/practice/${practiceArea.id}`);
+        navigate(`/practice/${practiceArea.id}/`);
     } else {
         navigate(-1);
     }
@@ -44,7 +44,7 @@ const ResourcePage: React.FC = () => {
          <div className="max-w-[800px] mx-auto">
             {practiceArea ? (
                 <Link 
-                    to={`/practice/${practiceArea.id}`}
+                    to={`/practice/${practiceArea.id}/`}
                     className="inline-flex items-center text-xs font-sans font-bold text-tech-primary mb-8 hover:underline cursor-pointer tracking-wide uppercase group"
                 >
                     <span className="mr-2">{'<'}</span> 
@@ -97,7 +97,7 @@ const ResourcePage: React.FC = () => {
               <p className="text-tech-muted mb-6 font-sans leading-relaxed">
                   If you are facing this problem, you may have a claim for statutory damages. Our intake process is digital, secure, and encrypted.
               </p>
-              <Link to="/intake" className="block sm:inline-block">
+              <Link to="/intake/" className="block sm:inline-block">
                 <Button>Evaluate My Case</Button>
               </Link>
           </div>
@@ -128,7 +128,7 @@ const ResourcePage: React.FC = () => {
                       return displayResources.map(related => (
                           <Link 
                               key={related.slug} 
-                              to={`/resource/${related.slug}`}
+                              to={`/resource/${related.slug}/`}
                               className="group block p-6 bg-white border border-tech-border rounded-xl hover:shadow-md transition-all hover:border-tech-primary/30"
                           >
                               <h4 className="font-serif font-bold text-lg text-tech-text group-hover:text-tech-primary mb-2 transition-colors">

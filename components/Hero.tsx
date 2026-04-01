@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                    <Link to="/intake">
+                    <Link to="/intake/">
                         <Button size="lg">Evaluate My Case</Button>
                     </Link>
                 </div>

@@ -91,7 +91,7 @@ const LibraryPage: React.FC = () => {
                   {filteredResources.map((resource) => (
                       <Link 
                           key={resource.slug} 
-                          to={`/resource/${resource.slug}`}
+                          to={`/resource/${resource.slug}/`}
                           className="group bg-white border border-tech-border p-8 rounded-xl hover:shadow-lg transition-all hover:-translate-y-1 duration-300 flex flex-col h-full"
                       >
                           <div className="mb-4">
@@ -137,7 +137,7 @@ const LibraryPage: React.FC = () => {
               <p className="text-tech-muted leading-relaxed">
                   These guides are for informational purposes. If you have a specific legal question about a consumer violation, we can evaluate your case directly.
               </p>
-              <Link to="/intake" className="inline-block">
+              <Link to="/intake/" className="inline-block">
                   <Button size="lg">Get a Case Evaluation</Button>
               </Link>
           </div>

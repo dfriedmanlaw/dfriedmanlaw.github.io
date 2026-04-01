@@ -62,7 +62,7 @@ const ContactPage: React.FC = () => {
                     Our secure digital intake form is the fastest way to get your case reviewed by an attorney. It takes less than 3 minutes.
                 </p>
                 
-                <Link to="/intake" className="w-full">
+                <Link to="/intake/" className="w-full">
                     <Button size="lg" fullWidth>Start Evaluation</Button>
                 </Link>
             </div>

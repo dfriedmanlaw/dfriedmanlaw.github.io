@@ -87,7 +87,7 @@ const AboutPage: React.FC = () => {
                         </a>
                     </div>
 
-                    <Link to="/intake" className="block">
+                    <Link to="/intake/" className="block">
                         <Button fullWidth>Evaluate My Case</Button>
                     </Link>
                 </div>

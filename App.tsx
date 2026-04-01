@@ -30,13 +30,13 @@ function App() {
                 {/* Main Site Layout */}
                 <Route element={<MainLayout />}>
                     <Route path="/" element={<Home />} />
-                    <Route path="/practice/:id" element={<PracticePage />} />
-                    <Route path="/resource/:slug" element={<ResourcePage />} />
-                    <Route path="/library" element={<LibraryPage />} />
-                    <Route path="/legal" element={<LegalPage />} />
-                    <Route path="/intake" element={<IntakePage />} />
-                    <Route path="/about" element={<AboutPage />} />
-                    <Route path="/contact" element={<ContactPage />} />
+                    <Route path="/practice/:id/" element={<PracticePage />} />
+                    <Route path="/resource/:slug/" element={<ResourcePage />} />
+                    <Route path="/library/" element={<LibraryPage />} />
+                    <Route path="/legal/" element={<LegalPage />} />
+                    <Route path="/intake/" element={<IntakePage />} />
+                    <Route path="/about/" element={<AboutPage />} />
+                    <Route path="/contact/" element={<ContactPage />} />
                     
                     {/* Fallback route */}
                     <Route path="*" element={<NotFound />} />

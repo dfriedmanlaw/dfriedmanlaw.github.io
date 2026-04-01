@@ -119,7 +119,7 @@ const PracticePage: React.FC = () => {
                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
                        {content.resources.map((res, idx) => (
                            <li key={idx}>
-                               <Link to={`/resource/${res.slug}`} className="flex items-start group text-tech-primary hover:text-tech-text transition-colors">
+                               <Link to={`/resource/${res.slug}/`} className="flex items-start group text-tech-primary hover:text-tech-text transition-colors">
                                    <span className="mr-3 mt-1.5 w-1.5 h-1.5 bg-tech-primary group-hover:bg-tech-text rounded-full shrink-0"></span>
                                    <span className="underline decoration-dotted underline-offset-4 font-sans">{res.title}</span>
                                </Link>
@@ -140,7 +140,7 @@ const PracticePage: React.FC = () => {
                   <p className="text-xs text-tech-muted mb-6 font-sans leading-relaxed">
                       Our intake process is digital, secure, and encrypted. Get a response from a federal litigator.
                   </p>
-                  <Link to="/intake" className="block">
+                  <Link to="/intake/" className="block">
                     <Button fullWidth>Start Evaluation</Button>
                   </Link>
               </div>
