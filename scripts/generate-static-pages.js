@@ -51,7 +51,15 @@ async function generate() {
     if (!fs.existsSync(routeDir)) {
       fs.mkdirSync(routeDir, { recursive: true });
     }
-    fs.writeFileSync(path.resolve(routeDir, 'index.html'), indexContent);
+    
+    // Inject correct canonical URL for each page
+    const canonicalUrl = `https://davidfriedmanlaw.com/${route}`;
+    const pageContent = indexContent.replace(
+      '<link rel="canonical" href="https://davidfriedmanlaw.com/" />',
+      `<link rel="canonical" href="${canonicalUrl}" />`
+    );
+    
+    fs.writeFileSync(path.resolve(routeDir, 'index.html'), pageContent);
     console.log(`  ✓ ${route}`);
   }
 
