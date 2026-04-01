@@ -51,7 +51,7 @@ const Philosophy: React.FC = () => {
                         “With nearly 20 years of experience as a consumer protection lawyer, I have dedicated my career to fighting financial institutions. Originally from Queens and seasoned in the Midwest, I combine technical precision with the personalized attention of a solo practice.”
                     </p>
                     
-                    <Link to="/about" className="flex items-center gap-2 text-tech-text font-bold text-sm uppercase tracking-wide cursor-pointer hover:text-tech-primary transition-colors pt-2 font-sans">
+                    <Link to="/about/" className="flex items-center gap-2 text-tech-text font-bold text-sm uppercase tracking-wide cursor-pointer hover:text-tech-primary transition-colors pt-2 font-sans">
                             Read Full Bio 
                             <span className="text-tech-primary">→</span>
                     </Link>

@@ -185,6 +185,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    
+    <!-- Hash to Clean URL Redirect Script -->
+    <script>
+      (function() {
+        var hash = window.location.hash;
+        if (hash && hash.indexOf('#/') === 0) {
+          var cleanPath = hash.substring(2);
+          // Ensure it ends with a slash if it's not empty and doesn't have one
+          if (cleanPath && cleanPath.charAt(cleanPath.length - 1) !== '/') {
+            cleanPath += '/';
+          }
+          window.location.replace(window.location.origin + '/' + cleanPath);
+        }
+      })();
+    </script>
 </head>
   <body>
     <div id="root"></div>
