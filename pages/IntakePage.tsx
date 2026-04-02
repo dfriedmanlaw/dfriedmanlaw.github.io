@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import Link from '../components/Link';
 import Button from '../components/Button';
 import { PRACTICE_AREAS, FORM_ENDPOINT, FILLOUT_URL } from '../constants';
 

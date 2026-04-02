@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from './Link';
 import { PRACTICE_AREAS, ICONS } from '../constants';
 import { PracticeArea } from '../types';
 

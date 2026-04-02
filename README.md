@@ -1,39 +1,41 @@
 # Law Office of David Friedman
 
-This is the public-facing website for the Law Office of David Friedman, a consumer protection law firm based in New York.
+This is the official website for the Law Office of David Friedman, a consumer protection law firm based in New York and Minnesota.
 
 ## Project Overview
 
-This project is a React-based single-page application (SPA) built with Vite and Tailwind CSS. It currently serves as a "Coming Soon" placeholder site with a functional intake form.
+This project is a high-performance, SEO-optimized website built using **Astro** for Static Site Generation (SSG). It features a "Hub & Spoke" content model designed for maximum search visibility and authority in consumer protection litigation.
 
 ### Key Features
 
-*   **Placeholder Landing Page:** A professional "Coming Soon" page with brand identity.
-*   **Intake Form:** Integrated with [Fillout](https://fillout.com) for secure client intake.
-*   **Responsive Design:** Fully responsive layout for mobile and desktop.
-*   **GitHub Pages Deployment:** Configured for easy deployment to GitHub Pages.
+*   **Static Site Generation (SSG):** Built with Astro for lightning-fast performance and perfect SEO crawlability.
+*   **Hub & Spoke Content Model:** Practice area "Hubs" linked to deep-dive "Spoke" resource articles.
+*   **SEO Optimized:** Automated sitemaps, canonical URLs, and comprehensive JSON-LD structured data for `LegalService`, `Attorney`, and `FAQPage`.
+*   **Intake Form Integration:** Secure, encrypted client intake via [Fillout](https://fillout.com).
+*   **Responsive Design:** Modern, professional interface built with Tailwind CSS v4.
+*   **GitHub Pages Deployment:** Automated deployment via GitHub Actions.
 
 ## Tech Stack
 
-*   **Framework:** React 18
-*   **Build Tool:** Vite
-*   **Styling:** Tailwind CSS
-*   **Routing:** React Router DOM
-*   **Deployment:** GitHub Pages (`gh-pages`)
+*   **Framework:** [Astro 6](https://astro.build/)
+*   **UI Components:** React 18
+*   **Styling:** Tailwind CSS v4 (via PostCSS)
+*   **Icons:** Lucide React
+*   **Deployment:** GitHub Actions (automated to GitHub Pages)
 
 ## Getting Started
 
 ### Prerequisites
 
-*   Node.js (v18 or higher)
+*   Node.js (v20 or higher)
 *   npm
 
 ### Installation
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/your-username/law-office-of-david-friedman.git
+    cd law-office-of-david-friedman
     ```
 
 2.  Install dependencies:
@@ -48,19 +50,20 @@ This project is a React-based single-page application (SPA) built with Vite and 
 
 ## Deployment
 
-To deploy the site to GitHub Pages:
+This site is configured for **automated deployment** using GitHub Actions.
 
-1.  Ensure your `vite.config.ts` has the correct `base` path (currently set to `./` for relative paths).
-2.  Run the deploy script:
-    ```bash
-    npm run deploy
-    ```
-    This will build the project and push the `dist` folder to the `gh-pages` branch.
+1.  Push your changes to the `main` branch.
+2.  In your GitHub repository settings:
+    *   Go to **Settings > Pages**.
+    *   Under **Build and deployment > Source**, select **GitHub Actions**.
+3.  The site will automatically build and deploy to GitHub Pages on every push.
 
 ## Configuration
 
-*   **Intake Form:** The Fillout form URL is configured in `src/constants.tsx`.
-*   **Brand Colors:** Tailwind colors are defined in `index.html` (script tag) and `tailwind.config.js` (if present).
+*   **Site URL:** Configured in `astro.config.mjs`.
+*   **Practice Areas:** Defined in `constants.tsx`.
+*   **Resource Library:** Content managed in `resourceContent.ts`.
+*   **Intake Form:** The Fillout form URL is configured in `constants.tsx`.
 
 ## License
 

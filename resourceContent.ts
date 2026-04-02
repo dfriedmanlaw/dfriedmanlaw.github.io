@@ -57,7 +57,7 @@ If they fail to do this, or if they “rubber stamp” a denial without looking 
     slug: "suing-mortgage-servicer-chapter-13",
     title: "Suing your mortgage servicer inside Chapter 13",
     category: "Mortgage Servicing",
-    relatedSlugs: ["bankruptcy-rule-3002-1-hidden-fees", "new-bankruptcy-rule-3002-1-update-2025", "notice-of-error-guide"],
+    relatedSlugs: ["new-bankruptcy-rule-3002-1-update-2025", "notice-of-error-guide"],
     content: `
 # Suing Your Mortgage Servicer Inside Chapter 13
 
@@ -493,7 +493,7 @@ You should not have to pay for your own abuse.
     slug: "zelle-fraud-defense",
     title: "The fraud defense: Getting your Zelle money back",
     category: "Fintech",
-    relatedSlugs: ["zelle-authorized-scam", "zelle-fraud-loophole", "fintech-provisional-credit-10-day-rule"],
+    relatedSlugs: ["zelle-authorized-scam", "fintech-provisional-credit-10-day-rule"],
     featuredSnippet: {
       question: "Can I get my money back from a Zelle scam?",
       answer: "Yes, you can potentially recover Zelle funds under Regulation E if the transfer was 'unauthorized.' While banks argue that scams are authorized because you pressed the button, federal guidance suggests that fraud vitiates consent, making transfers induced by impersonation scams legally unauthorized."
@@ -501,7 +501,7 @@ You should not have to pay for your own abuse.
     content: `
 # Zelle Fraud: The “Authorized” Loophole
 
-You receive a text from “Chase Fraud Alert.” You reply. You get a call from a “bank agent” who knows your address and last 4 digits. They tell you to Zelle money to yourself to “reverse” a hack. You do it. The money vanishes.
+You receive a text from “Chase Fraud Alert” or a call from “Bank of America Fraud Department.” The caller ID looks real. They tell you to Zelle money to yourself or a “safe locker” to “reverse” a hack. You do it. The money vanishes.
 
 When you call the bank, they say: **“Access Denied. You authorized the transaction. No refund.”**
 
@@ -531,7 +531,7 @@ If you were scammed on Zelle:
     slug: "zelle-authorized-scam",
     title: "What to do when your bank says a Zelle scam was “authorized”",
     category: "Fintech",
-    relatedSlugs: ["zelle-fraud-defense", "zelle-fraud-loophole", "treble-damages-bad-faith"],
+    relatedSlugs: ["zelle-fraud-defense", "treble-damages-bad-faith"],
     content: `
 # Fighting the “Authorized” Denial
 
@@ -684,7 +684,7 @@ We file motions or adversary proceedings to enforce the stay. We don’t just ge
     slug: "rule-3002-1-mortgage",
     title: "Rule 3002.1: Suing mortgage servicers for hidden fees in Chapter 13",
     category: "Bankruptcy",
-    relatedSlugs: ["bankruptcy-rule-3002-1-hidden-fees", "new-bankruptcy-rule-3002-1-update-2025"],
+    relatedSlugs: ["new-bankruptcy-rule-3002-1-update-2025"],
     content: `
 # Rule 3002.1: The Mortgage Watchdog
 
@@ -761,7 +761,7 @@ Many high-volume bankruptcy mills do not handle APs. They refer them out or tell
     slug: "discharge-fintech-loans",
     title: "Can I discharge Fintech and “Buy Now, Pay Later” loans?",
     category: "Bankruptcy",
-    relatedSlugs: ["ewa-usury", "bankruptcy-rule-3002-1-hidden-fees"],
+    relatedSlugs: ["ewa-usury", "new-bankruptcy-rule-3002-1-update-2025"],
     content: `
 # Discharging Fintech and BNPL Loans
 
@@ -788,7 +788,7 @@ Timing is everything. We advise clients on when to file to minimize the risk of 
     slug: "mortgage-math-chapter-13",
     title: "When the Mortgage Math Doesn’t Add Up: Why your Chapter 13 discharge didn’t fix your arrears",
     category: "Mortgage Servicing",
-    relatedSlugs: ["suing-mortgage-servicer-chapter-13", "bankruptcy-rule-3002-1-hidden-fees"],
+    relatedSlugs: ["suing-mortgage-servicer-chapter-13", "new-bankruptcy-rule-3002-1-update-2025"],
     content: `
 # When the Mortgage Math Doesn’t Add Up
 
@@ -1381,7 +1381,7 @@ These are difficult cases, but we are fighting to close the Zelle loophole and h
     slug: "neobank-account-freeze",
     title: "Locked Out: When a Neobank Freezes Your Rent Money",
     category: "Fintech & Digital Banking",
-    relatedSlugs: ["fintech-provisional-credit-10-day-rule", "neobank-freeze"],
+    relatedSlugs: ["fintech-provisional-credit-10-day-rule"],
     content: `
 # Locked Out: When a Neobank Freezes Your Rent Money
 
@@ -1393,9 +1393,12 @@ Suddenly, your account is “locked for suspicious activity.” You can’t acce
 
 Banks have the right to freeze accounts to prevent fraud. But they often use “fraud prevention” as an excuse to hold your money indefinitely without explanation.
 
-## Regulation E Still Applies
+## The “10-Day Rule” (Regulation E)
 
-Even if an account is frozen, the bank must still comply with Regulation E if you file a Notice of Error regarding the freeze or the deposit. They cannot simply ignore you for months.
+Under Regulation E, if you dispute an error (like a missing deposit or an unauthorized charge), the bank has **10 business days** to complete its investigation.
+If they cannot finish in 10 days, they **must** provide **Provisional Credit** (put the money back in your account) while they keep looking.
+
+Neobanks often skip this step. They freeze the account for “security review” for weeks or months, leaving you with $0 balance and no way to pay bills. This is a violation of the EFTA.
 
 ## Actual Damages
 
@@ -1437,7 +1440,7 @@ When your Chapter 13 case is nearing completion, we file a **Motion to Deem Mort
     slug: "new-bankruptcy-rule-3002-1-update-2025",
     title: "The New Rule 3002.1: A Powerful Weapon for Chapter 13 Debtors (2025 Update)",
     category: "Consumer Bankruptcy",
-    relatedSlugs: ["bankruptcy-rule-3002-1-hidden-fees", "rule-3002-1-mortgage"],
+    relatedSlugs: ["rule-3002-1-mortgage"],
     content: `
 # The New Rule 3002.1: A Powerful Weapon for Chapter 13 Debtors (2025 Update)
 
@@ -1445,14 +1448,17 @@ Effective December 1, 2025, the Federal Rules of Bankruptcy Procedure regarding 
 
 ## Key Changes You Need to Know
 
-### 1. The “Motion to Determine Status” is Now Mandatory
+### 1. The 180-Day Rule (Rule 3002.1(c))
+Bankruptcy Rule 3002.1 requires mortgage servicers to file a **"Notice of Postpetition Mortgage Fees, Expenses, and Charges"** (Official Form 410S2) within **180 days** of incurring any fee. If they fail to file this notice on time, the court can **bar them from collecting the fee.**
+
+### 2. The “Motion to Determine Status” is Now Mandatory
 Previously, filing a motion to check if your mortgage was current at the end of a case was optional. Now, the process is more streamlined and aggressive. The new rule creates a clear path for a **binding court order** that determines exactly what you owe (or don’t owe).
 
-### 2. Expanded Coverage: HELOCs and Reverse Mortgages
-The old rule was sometimes interpreted to apply only to primary mortgages. The 2025 amendments clarify that **Home Equity Lines of Credit (HELOCs)** and **Reverse Mortgages** are fully covered. Servicers of these loans can no longer hide behind ambiguity; they must disclose every fee and rate change.
+### 3. Expanded Coverage: HELOCs and Reverse Mortgages
+The 2025 amendments clarify that **Home Equity Lines of Credit (HELOCs)** and **Reverse Mortgages** are fully covered. Servicers of these loans can no longer hide behind ambiguity; they must disclose every fee and rate change.
 
-### 3. Strict Deadlines for Rate Changes
-For adjustable-rate mortgages (ARMs) and HELOCs, servicers must now file a notice of payment change at least **21 days** before the new payment amount is due. If they miss this deadline, they cannot charge late fees caused by the change, and the court may sanction them.
+### 4. Strict Deadlines for Rate Changes
+For adjustable-rate mortgages (ARMs) and HELOCs, servicers must now file a notice of payment change at least **21 days** before the new payment amount is due.
 
 ## Why This Matters
 

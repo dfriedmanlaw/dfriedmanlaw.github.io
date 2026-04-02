@@ -1,11 +1,15 @@
 import React, { useEffect } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
 import { PRACTICE_AREAS, FILLOUT_URL } from '../constants';
 import Button from '../components/Button';
+import Link from '../components/Link';
 
-const PracticePage: React.FC = () => {
-  const { id } = useParams<{ id: string }>();
-  const navigate = useNavigate();
+interface PracticePageProps {
+  id?: string;
+}
+
+const PracticePage: React.FC<PracticePageProps> = ({ id: propId }) => {
+  // Use propId if provided, otherwise try to get from window.location (client-side)
+  const id = propId || (typeof window !== 'undefined' ? window.location.pathname.split('/').filter(Boolean).pop() : undefined);
   const area = PRACTICE_AREAS.find(p => p.id === id);
 
   useEffect(() => {
@@ -16,14 +20,14 @@ const PracticePage: React.FC = () => {
     return (
         <div className="min-h-screen flex items-center justify-center flex-col gap-4">
             <h1 className="text-2xl font-bold text-white">Practice Area Not Found</h1>
-            <Link to="/" className="text-tech-primary hover:underline">Return Home</Link>
+            <Link to="/">Return Home</Link>
         </div>
     );
   }
 
   const handleReturn = (e: React.MouseEvent) => {
     e.preventDefault();
-    navigate('/');
+    window.location.href = '/';
     // Small delay to allow Home component to mount before scrolling
     setTimeout(() => {
         const element = document.getElementById('practice');

@@ -1,0 +1,20 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PracticePage from '../../../pages/PracticePage';
+import { PRACTICE_AREAS } from '../../../constants';
+
+export function getStaticPaths() {
+  return PRACTICE_AREAS.map((area) => ({
+    params: { id: area.id },
+    props: { area },
+  }));
+}
+
+const { area } = Astro.props;
+const title = `${area.title} | Law Office of David Friedman`;
+const description = area.description;
+---
+
+<Layout title={title} description={description}>
+	<PracticePage id={area.id} client:load />
+</Layout>

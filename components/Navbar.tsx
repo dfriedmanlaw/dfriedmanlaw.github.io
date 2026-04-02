@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { NAV_ITEMS } from '../constants';
 import Button from './Button';
+import Link from './Link';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const location = useLocation();
-  const navigate = useNavigate();
+  const [pathname, setPathname] = useState('');
 
   useEffect(() => {
+    setPathname(window.location.pathname);
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
   // Close mobile menu when route changes
   useEffect(() => {
     setIsMobileMenuOpen(false);
-  }, [location]);
+  }, [pathname]);
 
   // Prevent scroll when mobile menu is open
   useEffect(() => {
@@ -48,9 +48,9 @@ const Navbar: React.FC = () => {
         e.preventDefault();
         const id = path.replace('/#', '');
         
-        if (location.pathname !== '/') {
+        if (pathname !== '/') {
             // Navigate to home first, then scroll
-            navigate('/');
+            window.location.href = '/';
             setTimeout(() => {
                 const element = document.getElementById(id);
                 if (element) element.scrollIntoView({ behavior: 'smooth' });

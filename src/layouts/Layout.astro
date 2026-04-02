@@ -1,0 +1,231 @@
+---
+interface Props {
+	title?: string;
+	description?: string;
+	canonicalURL?: string;
+}
+
+const { 
+	title = "Law Office of David Friedman | Consumer Protection Attorney New York",
+	description = "Law Office of David Friedman - Specialized consumer protection attorney in New York and Minnesota. Expertise in mortgage errors, credit reporting, and debt collection defense.",
+	canonicalURL = Astro.url.href
+} = Astro.props;
+
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import '../../globals.css';
+---
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<script is:inline>
+			// Single Page Apps for GitHub Pages
+			// https://github.com/rafgraph/spa-github-pages
+			(function(l) {
+				if (l.search[1] === '/' ) {
+					var decoded = l.search.slice(1).split('&').map(function(s) { 
+						return s.replace(/~and~/g, '&')
+					}).join('?');
+					window.history.replaceState(null, null,
+							l.pathname.slice(0, -1) + decoded + l.hash
+					);
+				}
+			}(window.location))
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta name="keywords" content="Consumer Protection, New York Lawyer, Mortgage Error Attorney, Credit Reporting Lawyer, Debt Collection Defense, David Friedman Law" />
+		<link rel="canonical" href={canonicalURL} />
+		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+		<!-- <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE_HERE" /> -->
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={canonicalURL} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content="https://davidfriedmanlaw.com/david-friedman.png" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={canonicalURL} />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content={description} />
+		<meta property="twitter:image" content="https://davidfriedmanlaw.com/david-friedman.png" />
+
+		<!-- Structured Data (JSON-LD) -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "LegalService",
+			"name": "Law Office of David Friedman",
+			"description": "Specialized consumer protection attorney in New York and Minnesota.",
+			"url": "https://davidfriedmanlaw.com",
+			"telephone": "+1-914-222-3612",
+			"email": "david@davidfriedmanlaw.com",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "4 Westchester Park Drive, Suite 155",
+				"addressLocality": "White Plains",
+				"addressRegion": "NY",
+				"postalCode": "10604",
+				"addressCountry": "US"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": 41.0339,
+				"longitude": -73.7629
+			},
+			"openingHoursSpecification": {
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday"
+				],
+				"opens": "09:00",
+				"closes": "17:00"
+			},
+			"sameAs": [
+				"https://davidfriedmanlaw.com"
+			]
+		}
+		</script>
+
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=385295510"></script>
+		<script is:inline>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', '385295510');
+		</script>
+
+		<!-- JSON-LD Structured Data for Generative SEO -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Attorney",
+			"name": "Law Office of David Friedman, PLLC",
+			"url": "https://davidfriedmanlaw.com",
+			"image": "https://davidfriedmanlaw.com/david-friedman.png",
+			"description": "David Friedman is a consumer protection attorney in New York specializing in Mortgage Errors, Credit Reporting Errors, Debt Harassment, Payment App Fraud, and Bankruptcy Rights Violations.",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "4 Westchester Park Drive, Suite 155",
+				"addressLocality": "White Plains",
+				"addressRegion": "NY",
+				"postalCode": "10604",
+				"addressCountry": "US"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": 41.0264,
+				"longitude": -73.7335
+			},
+			"hasMap": "https://www.google.com/maps/search/?api=1&query=4+Westchester+Park+Drive+Suite+155+White+Plains+NY+10604",
+			"openingHoursSpecification": [
+				{
+					"@type": "OpeningHoursSpecification",
+					"dayOfWeek": [
+						"Monday",
+						"Tuesday",
+						"Wednesday",
+						"Thursday",
+						"Friday"
+					],
+					"opens": "09:00",
+					"closes": "17:00"
+				}
+			],
+			"telephone": "+1-914-222-3612",
+			"email": "david@davidfriedmanlaw.com",
+			"areaServed": [
+				{
+					"@type": "State",
+					"name": "New York"
+				},
+				{
+					"@type": "State",
+					"name": "Minnesota"
+				}
+			],
+			"priceRange": "Contingency Fee",
+			"knowsAbout": [
+				"Consumer Protection Law", 
+				"Mortgage Errors & Servicing Abuse", 
+				"Credit Reporting Errors & Identity Theft", 
+				"Debt Collection Harassment & Rights", 
+				"Payment App Fraud & Bank Errors", 
+				"Bankruptcy Rights Violations",
+				"FCRA", 
+				"FDCPA", 
+				"RESPA", 
+				"Class Actions"
+			]
+		}
+		</script>
+
+		<!-- FAQ Structured Data -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "FAQPage",
+			"mainEntity": [
+				{
+					"@type": "Question",
+					"name": "What is a mixed credit file and how is it fixed?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "A mixed credit file occurs when a credit bureau merges your financial data with another person’s—often a relative or someone with a similar name. Under the FCRA, this is a failure of 'maximum possible accuracy.' We litigate these errors to force a manual separation of the files and recover statutory damages for the consumer."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Can I sue if a credit bureau says my dispute was 'verified' as accurate?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Yes. This is the 'Verified Trap.' When a bureau performs a superficial automated check instead of a meaningful investigation, they violate the FCRA. Even if they claim the error is 'verified,' we can file a federal lawsuit to hold them accountable for failing to correct a documented inaccuracy."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "What are common mortgage servicing errors under RESPA Regulation X?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Common violations include payment misapplication, escrow account mismanagement, and failure to respond to a Notice of Error (NOE). Under Regulation X, mortgage servicers must perform a reasonable investigation. Failure to do so allows the homeowner to seek actual damages and attorney's fees."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "How does statutory fee-shifting work in consumer protection lawsuits?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Federal statutes like the FCRA and FDCPA include 'fee-shifting' provisions. This means if we win your case or reach a settlement, the bank or credit bureau is legally required to pay your attorney’s fees. This levels the playing field, allowing consumers to hire elite advocacy without paying upfront hourly rates."
+					}
+				}
+			]
+		}
+		</script>
+		
+		<!-- Fonts: Lora & Inter -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+	</head>
+	<body class="min-h-screen bg-tech-bg text-tech-text font-sans selection:bg-tech-primary selection:text-white flex flex-col pt-24">
+		<Navbar client:load />
+		<main class="flex-grow">
+			<slot />
+		</main>
+		<Footer client:load />
+	</body>
+</html>

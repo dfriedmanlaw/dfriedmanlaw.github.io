@@ -1,0 +1,20 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ResourcePage from '../../../pages/ResourcePage';
+import { RESOURCES } from '../../../resourceContent';
+
+export function getStaticPaths() {
+  return RESOURCES.map((resource) => ({
+    params: { slug: resource.slug },
+    props: { resource },
+  }));
+}
+
+const { resource } = Astro.props;
+const title = `${resource.title} | Law Office of David Friedman`;
+const description = resource.featuredSnippet?.answer || resource.content.substring(0, 160).replace(/[#*`]/g, '').trim();
+---
+
+<Layout title={title} description={description}>
+	<ResourcePage slug={resource.slug} client:load />
+</Layout>

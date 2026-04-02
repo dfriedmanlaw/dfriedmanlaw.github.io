@@ -1,13 +1,16 @@
 import React, { useEffect } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
 import Markdown from 'react-markdown';
 import { RESOURCES } from '../resourceContent';
 import { PRACTICE_AREAS, FILLOUT_URL } from '../constants';
 import Button from '../components/Button';
+import Link from '../components/Link';
 
-const ResourcePage: React.FC = () => {
-  const { slug } = useParams<{ slug: string }>();
-  const navigate = useNavigate();
+interface ResourcePageProps {
+  slug?: string;
+}
+
+const ResourcePage: React.FC<ResourcePageProps> = ({ slug: propSlug }) => {
+  const slug = propSlug || (typeof window !== 'undefined' ? window.location.pathname.split('/').filter(Boolean).pop() : undefined);
   const resource = RESOURCES.find(r => r.slug === slug);
   
   // Find the practice area this resource belongs to
@@ -23,7 +26,7 @@ const ResourcePage: React.FC = () => {
     return (
         <div className="min-h-screen flex items-center justify-center flex-col gap-4 bg-tech-bg">
             <h1 className="text-2xl font-bold text-tech-text">Resource Not Found</h1>
-            <Link to="/" className="text-tech-primary hover:underline">Return Home</Link>
+            <Link to="/">Return Home</Link>
         </div>
     );
   }
@@ -31,9 +34,9 @@ const ResourcePage: React.FC = () => {
   const handleReturn = (e: React.MouseEvent) => {
     e.preventDefault();
     if (practiceArea) {
-        navigate(`/practice/${practiceArea.id}/`);
+        window.location.href = `/practice/${practiceArea.id}/`;
     } else {
-        navigate(-1);
+        window.history.back();
     }
   };
 

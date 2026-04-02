@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://davidfriedmanlaw.com/sitemap.xml
+Sitemap: https://davidfriedmanlaw.com/sitemap-index.xml
