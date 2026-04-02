@@ -27,15 +27,17 @@ function getResources() {
   const contentPath = path.resolve(__dirname, '../resourceContent.ts');
   const content = fs.readFileSync(contentPath, 'utf-8');
   
-  // This is a bit hacky but works for extracting the array content without a full TS parser
-  const resourceRegex = /\{[\s\S]*?slug:\s*["']([^"']+)["'][\s\S]*?title:\s*["']([^"']+)["'][\s\S]*?content:\s*`([\s\S]*?)`[\s\S]*?\}/g;
+  // Extract slug, title, content, and optional featuredSnippet
+  const resourceRegex = /\{[\s\S]*?slug:\s*["']([^"']+)["'][\s\S]*?title:\s*["']([^"']+)["'][\s\S]*?(?:featuredSnippet:\s*\{[\s\S]*?question:\s*["']([^"']+)["'][\s\S]*?answer:\s*["']([^"']+)["'][\s\S]*?\})?[\s\S]*?content:\s*`([\s\S]*?)`[\s\S]*?\}/g;
   const resources = [];
   let match;
   while ((match = resourceRegex.exec(content)) !== null) {
     resources.push({
       route: `resource/${match[1]}/`,
       title: match[2],
-      content: match[3]
+      question: match[3],
+      answer: match[4],
+      content: match[5]
     });
   }
   return resources;
@@ -120,6 +122,7 @@ async function generate() {
     // Inject the content into the root div for SEO
     if (page.content) {
       const htmlContent = `<div class="static-content" style="display:none">
+        ${page.question ? `<h2>${page.question}</h2><p>${page.answer}</p>` : ''}
         ${mdToHtml(page.content)}
       </div>`;
       
@@ -128,6 +131,26 @@ async function generate() {
         /<div id="root">[\s\S]*?<\/div>/,
         `<div id="root">${htmlContent}</div>`
       );
+
+      // Inject page-specific FAQ Schema if available
+      if (page.question && page.answer) {
+        const faqSchema = `
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "${page.question.replace(/"/g, '\\"')}",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "${page.answer.replace(/"/g, '\\"')}"
+        }
+      }]
+    }
+    </script>`;
+        pageContent = pageContent.replace('</head>', `${faqSchema}\n</head>`);
+      }
     }
     
     const targetPath = path.resolve(routeDir, 'index.html');
@@ -135,7 +158,50 @@ async function generate() {
     console.log(`  ✓ ${page.route}`);
   }
 
-  console.log('Static pages with content generated successfully!');
+  // Generate sitemap.xml
+  const today = new Date().toISOString().split('T')[0];
+  let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://davidfriedmanlaw.com/</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>`;
+
+  for (const page of allPages) {
+    if (!page.route) continue;
+    
+    let priority = '0.7';
+    let changefreq = 'monthly';
+    
+    if (page.route.startsWith('practice/')) {
+      priority = '0.9';
+    } else if (page.route === 'library/') {
+      priority = '0.8';
+      changefreq = 'weekly';
+    } else if (['about/', 'contact/', 'intake/'].includes(page.route)) {
+      priority = '0.6';
+    } else if (page.route === 'legal/') {
+      priority = '0.3';
+      changefreq = 'yearly';
+    }
+
+    sitemap += `
+  <url>
+    <loc>https://davidfriedmanlaw.com/${page.route}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>${changefreq}</changefreq>
+    <priority>${priority}</priority>
+  </url>`;
+  }
+
+  sitemap += '\n</urlset>';
+  
+  fs.writeFileSync(path.resolve(DIST_DIR, 'sitemap.xml'), sitemap);
+  console.log('  ✓ sitemap.xml');
+
+  console.log('Static pages and sitemap generated successfully!');
 }
 
 generate();

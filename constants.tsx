@@ -92,6 +92,7 @@ export const PRACTICE_AREAS: PracticeArea[] = [
         { title: "Suspense Accounts: Why your payment didn’t get credited to your balance", slug: "suspense-accounts" },
         { title: "Force-Placed Insurance: Did your servicer buy a policy you didn’t need?", slug: "force-placed-insurance" },
         { title: "The 60-Day Transfer Protection: You can’t be charged a late fee during a hand-off", slug: "transfer-protection" },
+        { title: "The New Rule 3002.1: A Powerful Weapon for Chapter 13 Debtors (2025 Update)", slug: "new-bankruptcy-rule-3002-1-update-2025" },
         
         // Litigation & Damages (The "So What")
         { title: "Dual Tracking: Why they can’t foreclose while reviewing your modification", slug: "dual-tracking-foreclosure" },
@@ -183,7 +184,9 @@ export const PRACTICE_AREAS: PracticeArea[] = [
         { title: "Can a debt collector use AI to text me?", slug: "ai-debt-collection" },
         { title: "The FAIR Act: New York’s new Unfair & Abusive standard", slug: "fair-act-ny" },
         { title: "Can a debt collector call me at work or contact my boss?", slug: "calls-at-work" },
-        { title: "Coerced Debt: Suing to clear your name after economic abuse", slug: "coerced-debt" }
+        { title: "Coerced Debt: Suing to clear your name after economic abuse", slug: "coerced-debt" },
+        { title: "How to stop debt collection calls: A step-by-step guide", slug: "stop-collection-calls" },
+        { title: "Debt collection after bankruptcy: What to do when a collector is hounding me for a debt I already handled in bankruptcy.", slug: "debt-collection-after-bankruptcy" }
       ],
       referral: {
         title: "A Federal Litigation Shop for FDCPA Violations",
@@ -220,7 +223,12 @@ export const PRACTICE_AREAS: PracticeArea[] = [
         { title: "Device vs. User: Why “IP Address Match” Is Not a Valid Investigation", slug: "fintech-ip-address-investigation" },
         { title: "Zombie Subscriptions: When the Bank Keeps Paying After You Said Stop", slug: "zombie-subscriptions-stop-payment" },
         { title: "The Zelle Loophole: When “Authorized” Transfers Are Actually Theft", slug: "zelle-fraud-loophole" },
-        { title: "Locked Out: When a Neobank Freezes Your Rent Money", slug: "neobank-account-freeze" }
+        { title: "Locked Out: When a Neobank Freezes Your Rent Money", slug: "neobank-account-freeze" },
+        { title: "Zelle Fraud Defense: How to fight back when the bank says no", slug: "zelle-fraud-defense" },
+        { title: "Zelle Authorized Scam: Why the bank is wrong about your authorization", slug: "zelle-authorized-scam" },
+        { title: "EWA Usury: Are Cash Advance Apps Illegal in New York?", slug: "ewa-usury" },
+        { title: "Neobank Freeze: What to do when your account is locked", slug: "neobank-freeze" },
+        { title: "Treble Damages: Suing for bad faith investigations", slug: "treble-damages-bad-faith" }
       ],
       referral: {
         title: "A Litigation Partner for Digital Fraud",
@@ -259,7 +267,8 @@ export const PRACTICE_AREAS: PracticeArea[] = [
         { title: "Discharge Injunctions: What to do if a creditor calls after your case is closed", slug: "discharge-injunction" },
         { title: "Adversary Proceedings: When bankruptcy becomes a federal lawsuit", slug: "adversary-proceedings" },
         { title: "Can I discharge Fintech and “Buy Now, Pay Later” loans?", slug: "discharge-fintech-loans" },
-        { title: "Cleaning up After Bankruptcy: Why are negative accounts still showing up on my report?", slug: "credit-reporting-after-bankruptcy" }
+        { title: "Cleaning up After Bankruptcy: Why are negative accounts still showing up on my report?", slug: "credit-reporting-after-bankruptcy" },
+        { title: "Debt collection after bankruptcy: What to do when a collector is hounding me for a debt I already handled in bankruptcy.", slug: "debt-collection-after-bankruptcy" }
       ],
       referral: {
         title: "A Technical Resource for Complex APs",

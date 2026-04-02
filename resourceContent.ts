@@ -4,6 +4,10 @@ export interface ResourceContent {
   category: string;
   content: string; // Markdown content
   relatedSlugs?: string[];
+  featuredSnippet?: {
+    question: string;
+    answer: string;
+  };
 }
 
 export const RESOURCES: ResourceContent[] = [
@@ -13,6 +17,10 @@ export const RESOURCES: ResourceContent[] = [
     title: "How to send a Notice of Error that banks can’t ignore",
     category: "Mortgage Servicing",
     relatedSlugs: ["suspense-accounts", "force-placed-insurance", "transfer-protection"],
+    featuredSnippet: {
+      question: "How do I send a Notice of Error to my mortgage servicer?",
+      answer: "To send a valid Notice of Error (NOE) under RESPA, you must send a separate written document to the servicer's designated NOE address via Certified Mail. The letter must include your name, account number, a clear description of the error, and a demand for correction within 30 days."
+    },
     content: `
 # How to Send a Notice of Error That Banks Can’t Ignore
 
@@ -179,6 +187,10 @@ Recognizing this risk, federal law (RESPA) provides a 60-day safe harbor for bor
     title: "Mixed Files: What to do when someone else’s debt is on your report",
     category: "Credit Reporting",
     relatedSlugs: ["credit-dispute-verified-trap", "sued-wrong-person", "identity-theft-recovery"],
+    featuredSnippet: {
+      question: "What is a mixed credit file and how do I fix it?",
+      answer: "A mixed credit file occurs when a credit bureau merges your financial data with another person's. To fix it, you must file a written dispute via certified mail identifying the stranger's accounts and demand a manual file separation. If the bureau fails to correct it, you may have a claim under the FCRA."
+    },
     content: `
 # Mixed Files: The “John Smith” Problem
 
@@ -482,6 +494,10 @@ You should not have to pay for your own abuse.
     title: "The fraud defense: Getting your Zelle money back",
     category: "Fintech",
     relatedSlugs: ["zelle-authorized-scam", "zelle-fraud-loophole", "fintech-provisional-credit-10-day-rule"],
+    featuredSnippet: {
+      question: "Can I get my money back from a Zelle scam?",
+      answer: "Yes, you can potentially recover Zelle funds under Regulation E if the transfer was 'unauthorized.' While banks argue that scams are authorized because you pressed the button, federal guidance suggests that fraud vitiates consent, making transfers induced by impersonation scams legally unauthorized."
+    },
     content: `
 # Zelle Fraud: The “Authorized” Loophole
 

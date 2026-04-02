@@ -72,6 +72,18 @@ const ResourcePage: React.FC = () => {
       </section>
 
       <div className="max-w-[800px] mx-auto px-6 py-16">
+          {/* Snippet Bait / Quick Answer Box */}
+          {resource.featuredSnippet && (
+            <div className="mb-12 p-8 bg-tech-primary/5 border-l-4 border-tech-primary rounded-r-xl shadow-sm">
+                <h2 className="text-xl font-serif font-bold text-tech-text mb-4">
+                    Quick Answer: {resource.featuredSnippet.question}
+                </h2>
+                <p className="text-lg text-tech-muted font-sans font-medium leading-relaxed">
+                    {resource.featuredSnippet.answer}
+                </p>
+            </div>
+          )}
+
           <div className="prose prose-lg prose-stone max-w-none font-serif">
             <Markdown 
                 components={{
