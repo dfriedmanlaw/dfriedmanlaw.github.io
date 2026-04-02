@@ -1,6 +1,6 @@
 import React from 'react';
 import { Home, CreditCard, PhoneOff, Smartphone, Scale, ArrowRight } from 'lucide-react';
-import { DocketItem, NavItem, PracticeArea } from './types';
+import { NavItem, PracticeArea } from './types';
 
 export const FILLOUT_URL = "https://forms.fillout.com/t/oHEig2YTTGus";
 // Formspree will send a verification email to this address upon first submission
@@ -21,14 +21,6 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'About', path: '/about/' },
   { label: 'Library', path: '/library/' },
   { label: 'Contact', path: '/contact/' },
-];
-
-export const DOCKET_ITEMS: DocketItem[] = [
-    { id: 1, text: "SDNY / 1:24-cv-01234 / SMITH V. EQUIFAX INFORMATION SERVICES LLC / COMPLAINT FILED" },
-    { id: 2, text: "SDNY / 1:24-cv-05678 / JONES V. JPMORGAN CHASE BANK, N.A. / SETTLEMENT AGREEMENT" },
-    { id: 3, text: "SDNY / 1:24-cv-09012 / DOE V. EXPERIAN INFORMATION SOLUTIONS / MOTION TO DISMISS DENIED" },
-    { id: 4, text: "ALERT: NY FAIR CONSUMER JUDGMENT INTEREST ACT EFFECTIVE APRIL 2022" },
-    { id: 5, text: "BANKRUPTCY SDNY / 24-10111 / IN RE: JOHNSON / ADVERSARY PROCEEDING COMMENCED" }
 ];
 
 export const ICONS = {

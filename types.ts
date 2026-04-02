@@ -29,8 +29,3 @@ export interface NavItem {
   isExternal?: boolean;
   children?: NavItem[];
 }
-
-export interface DocketItem {
-  id: number;
-  text: string;
-}

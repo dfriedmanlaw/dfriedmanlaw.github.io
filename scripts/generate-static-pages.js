@@ -119,6 +119,33 @@ async function generate() {
       `<link rel="canonical" href="${canonicalUrl}" />`
     );
 
+    // Update OG and Twitter URLs
+    pageContent = pageContent.replace(
+      '<meta property="og:url" content="https://davidfriedmanlaw.com/">',
+      `<meta property="og:url" content="${canonicalUrl}">`
+    ).replace(
+      '<meta property="twitter:url" content="https://davidfriedmanlaw.com/">',
+      `<meta property="twitter:url" content="${canonicalUrl}">`
+    );
+
+    // Update Title if page has a specific title
+    if (page.title && page.title !== 'Law Office of David Friedman') {
+      const fullTitle = `${page.title} | Law Office of David Friedman`;
+      pageContent = pageContent.replace(
+        /<title>.*?<\/title>/,
+        `<title>${fullTitle}</title>`
+      );
+      
+      // Also update OG and Twitter titles
+      pageContent = pageContent.replace(
+        '<meta property="og:title" content="Law Office of David Friedman | Consumer Protection Attorney NY & MN">',
+        `<meta property="og:title" content="${fullTitle}">`
+      ).replace(
+        '<meta property="twitter:title" content="Law Office of David Friedman | Consumer Protection Attorney NY & MN">',
+        `<meta property="twitter:title" content="${fullTitle}">`
+      );
+    }
+
     // Inject the content into the root div for SEO
     if (page.content) {
       const htmlContent = `<div class="static-content" style="display:none">
