@@ -1,7 +1,7 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import ResourcePage from '../../../pages/ResourcePage';
-import { RESOURCES } from '../../../resourceContent';
+import Layout from '@/src/layouts/Layout.astro';
+import ResourcePage from '@/pages/ResourcePage';
+import { RESOURCES } from '@/resourceContent';
 
 export function getStaticPaths() {
   return RESOURCES.map((resource) => ({
@@ -16,5 +16,5 @@ const description = resource.featuredSnippet?.answer || resource.content.substri
 ---
 
 <Layout title={title} description={description}>
-	<ResourcePage slug={resource.slug} client:load />
+	<ResourcePage slug={resource.slug} />
 </Layout>

@@ -1,7 +1,7 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import PracticePage from '../../../pages/PracticePage';
-import { PRACTICE_AREAS } from '../../../constants';
+import Layout from '@/src/layouts/Layout.astro';
+import PracticePage from '@/pages/PracticePage';
+import { PRACTICE_AREAS } from '@/constants';
 
 export function getStaticPaths() {
   return PRACTICE_AREAS.map((area) => ({
@@ -16,5 +16,5 @@ const description = area.description;
 ---
 
 <Layout title={title} description={description}>
-	<PracticePage id={area.id} client:load />
+	<PracticePage id={area.id} />
 </Layout>

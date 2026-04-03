@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Markdown from 'react-markdown';
 import { RESOURCES } from '../resourceContent';
-import { PRACTICE_AREAS, FILLOUT_URL } from '../constants';
+import { PRACTICE_AREAS } from '../constants';
 import Button from '../components/Button';
 import Link from '../components/Link';
 
@@ -10,17 +10,13 @@ interface ResourcePageProps {
 }
 
 const ResourcePage: React.FC<ResourcePageProps> = ({ slug: propSlug }) => {
-  const slug = propSlug || (typeof window !== 'undefined' ? window.location.pathname.split('/').filter(Boolean).pop() : undefined);
+  const slug = propSlug;
   const resource = RESOURCES.find(r => r.slug === slug);
   
   // Find the practice area this resource belongs to
   const practiceArea = PRACTICE_AREAS.find(area => 
     area.content.resources.some(r => r.slug === slug)
   );
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [slug]);
 
   if (!resource) {
     return (
@@ -30,15 +26,6 @@ const ResourcePage: React.FC<ResourcePageProps> = ({ slug: propSlug }) => {
         </div>
     );
   }
-
-  const handleReturn = (e: React.MouseEvent) => {
-    e.preventDefault();
-    if (practiceArea) {
-        window.location.href = `/practice/${practiceArea.id}/`;
-    } else {
-        window.history.back();
-    }
-  };
 
   return (
     <main className="pt-24 min-h-screen bg-tech-bg">
@@ -54,12 +41,12 @@ const ResourcePage: React.FC<ResourcePageProps> = ({ slug: propSlug }) => {
                     Return to {practiceArea.title} Hub
                 </Link>
             ) : (
-                <button 
-                    onClick={() => navigate(-1)}
+                <Link 
+                    to="/library/"
                     className="inline-flex items-center text-xs font-sans font-bold text-tech-primary mb-8 hover:underline cursor-pointer tracking-wide uppercase"
                 >
-                    {'<'} Return
-                </button>
+                    {'<'} Return to Library
+                </Link>
             )}
             
             <div className="mb-4">

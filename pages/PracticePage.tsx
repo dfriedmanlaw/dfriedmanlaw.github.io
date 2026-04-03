@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { PRACTICE_AREAS, FILLOUT_URL } from '../constants';
+import React from 'react';
+import { PRACTICE_AREAS } from '../constants';
 import Button from '../components/Button';
 import Link from '../components/Link';
 
@@ -8,13 +8,8 @@ interface PracticePageProps {
 }
 
 const PracticePage: React.FC<PracticePageProps> = ({ id: propId }) => {
-  // Use propId if provided, otherwise try to get from window.location (client-side)
-  const id = propId || (typeof window !== 'undefined' ? window.location.pathname.split('/').filter(Boolean).pop() : undefined);
+  const id = propId;
   const area = PRACTICE_AREAS.find(p => p.id === id);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [id]);
 
   if (!area || !area.content) {
     return (
@@ -25,18 +20,6 @@ const PracticePage: React.FC<PracticePageProps> = ({ id: propId }) => {
     );
   }
 
-  const handleReturn = (e: React.MouseEvent) => {
-    e.preventDefault();
-    window.location.href = '/';
-    // Small delay to allow Home component to mount before scrolling
-    setTimeout(() => {
-        const element = document.getElementById('practice');
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
-    }, 100);
-  };
-
   const { content } = area;
 
   return (
@@ -44,13 +27,12 @@ const PracticePage: React.FC<PracticePageProps> = ({ id: propId }) => {
       {/* Header Section */}
       <section className="relative px-6 pb-12 border-b border-tech-border">
          <div className="max-w-[1000px] mx-auto">
-            <a 
-                href="/#practice" 
-                onClick={handleReturn}
+            <Link 
+                to="/#practice" 
                 className="inline-flex items-center text-xs font-sans font-bold text-tech-primary mb-8 hover:underline cursor-pointer tracking-wide"
             >
                 {'<'} RETURN TO PRACTICE AREAS
-            </a>
+            </Link>
             
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
                 <div className="md:col-span-8">
