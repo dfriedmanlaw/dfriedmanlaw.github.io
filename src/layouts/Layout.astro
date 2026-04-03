@@ -8,7 +8,7 @@ interface Props {
 const { 
 	title = "Law Office of David Friedman | Consumer Protection Attorney New York",
 	description = "Law Office of David Friedman - Specialized consumer protection attorney in New York and Minnesota. Expertise in mortgage errors, credit reporting, and debt collection defense.",
-	canonicalURL = Astro.url.href
+	canonicalURL = Astro.url.href.endsWith('/') ? Astro.url.href : `${Astro.url.href}/`
 } = Astro.props;
 
 import Navbar from '../../components/Navbar';
@@ -20,20 +20,6 @@ import '../../globals.css';
 <html lang="en" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
-		<script is:inline>
-			// Single Page Apps for GitHub Pages
-			// https://github.com/rafgraph/spa-github-pages
-			(function(l) {
-				if (l.search[1] === '/' ) {
-					var decoded = l.search.slice(1).split('&').map(function(s) { 
-						return s.replace(/~and~/g, '&')
-					}).join('?');
-					window.history.replaceState(null, null,
-							l.pathname.slice(0, -1) + decoded + l.hash
-					);
-				}
-			}(window.location))
-		</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
