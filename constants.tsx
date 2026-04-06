@@ -189,7 +189,7 @@ export const PRACTICE_AREAS: PracticeArea[] = [
   {
     id: 'fintech',
     title: 'Payment App Fraud & Bank Errors',
-    subtitle: 'EFTA / Regulation E',
+    subtitle: 'EFTA / TILA / Usury',
     description: 'Recovering funds stolen through Zelle scams, unauthorized debits, and frozen neobank accounts.',
     iconPath: ICONS.Fintech,
     content: {
@@ -201,7 +201,7 @@ export const PRACTICE_AREAS: PracticeArea[] = [
           bullets: [
             { title: "The Zelle “Authorized” Trap", text: "Banks often refuse to refund Zelle fraud by claiming you authorized the transfer—even if you were tricked by a sophisticated imposter. Following the 2025 New York Attorney General lawsuit against Zelle (James v. EWS), we use evidence of the platform’s “frictionless” design flaws to hold banks accountable for these losses." },
             { title: "Unauthorized Fintech Debits", text: "Cash advance and Earned Wage Access (EWA) apps often treat your bank account as their own. If an app has debited your account after you revoked authorization or ignored a stop payment order, they have committed a federal violation under Regulation E." },
-            { title: "Shadow Loans & Fintech Usury", text: "Many apps claim their “tips” and “express fees” aren’t interest. Under New York’s 2026 usury standards, these costs are increasingly recognized as illegal high-interest loans. We sue to recoup these fees and void the underlying debt." },
+            { title: "Shadow Loans & Fintech Usury (TILA)", text: "Apps like Dave, MoneyLion, FloatMe, and Tilt claim their “tips” aren’t interest. Under New York usury laws and the federal Truth in Lending Act (TILA), these are often illegal high-interest loans. We sue to recoup fees and seek statutory damages for disclosure failures." },
             { title: "The Neobank Freeze", text: "If a digital bank (like Chime, Dave, or CashApp) has frozen your account or “lost” your direct deposit, they are legally required to provide you with provisional credit within 10 days if their investigation isn’t finished. If they leave you with a $0 balance for weeks, we litigate to restore your access and seek damages for the hardship." }
           ]
         },
@@ -212,6 +212,7 @@ export const PRACTICE_AREAS: PracticeArea[] = [
       ],
       resources: [
         { title: "The 10-Day Rule: When Fintechs Fail to Give Provisional Credit", slug: "fintech-provisional-credit-10-day-rule" },
+        { title: "Hidden Interest: Suing Cash Advance Apps for Usury and TILA Violations", slug: "cash-advance-app-usury-tila" },
         { title: "Device vs. User: Why “IP Address Match” Is Not a Valid Investigation", slug: "fintech-ip-address-investigation" },
         { title: "Zombie Subscriptions: When the Bank Keeps Paying After You Said Stop", slug: "zombie-subscriptions-stop-payment" },
         { title: "The Zelle Loophole: When “Authorized” Transfers Are Actually Theft", slug: "zelle-fraud-loophole" },

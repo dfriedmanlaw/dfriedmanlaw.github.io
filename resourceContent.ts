@@ -552,6 +552,46 @@ Banks rely on a narrow interpretation of the law. They believe “authorized” 
 Banks hate litigating these cases because it exposes their security flaws. Often, a well-drafted legal complaint citing the specific failures in their authentication process can force a settlement where a customer service call failed.
 `
   },
+    {
+    slug: "cash-advance-app-usury-tila",
+    title: "Hidden Interest: Suing Cash Advance Apps for Usury and TILA Violations",
+    category: "Fintech",
+    relatedSlugs: ["ewa-usury", "fair-act-ny", "treble-damages-bad-faith"],
+    featuredSnippet: {
+      question: "Are cash advance app fees considered illegal interest?",
+      answer: "Yes, in many cases. While apps like Dave, MoneyLion, and Tilt call their costs 'tips' or 'express fees,' when calculated as an APR, they often exceed New York's 16% usury cap. If these apps are deemed lenders, they are also in violation of the Truth in Lending Act (TILA) for failing to disclose these costs as interest."
+    },
+    content: `
+# Hidden Interest: Is Your Cash Advance App Violating Usury Laws or TILA?
+
+Cash advance apps like **Dave, MoneyLion, FloatMe, and Tilt** have exploded in popularity by promising "interest-free" advances to help you bridge the gap between paychecks. They claim they aren't lenders and that their costs—often called "tips," "express fees," or "monthly memberships"—are optional.
+
+However, when you do the math, these "fees" often translate into astronomical interest rates that far exceed New York's legal limits.
+
+## The Math of a "Small" Fee
+If you take a $50 advance and pay a $5 "express fee" to get the money today, and you pay it back in 7 days when your paycheck hits:
+*   You paid $5 to borrow $50 for one week.
+*   That is a **520% APR**.
+
+In New York, the civil usury cap is **16%** and the criminal usury cap is **25%**. By calling these costs "fees" instead of interest, these apps are attempting to bypass the laws that protect you from predatory lending.
+
+## The Truth in Lending Act (TILA) Violation
+The federal **Truth in Lending Act (TILA)** requires anyone extending credit to provide clear, standardized disclosures about the cost of that credit, including the **Annual Percentage Rate (APR)**.
+
+Because these apps claim they aren't "lenders," they often provide zero TILA disclosures. If a court determines that these advances are, in fact, "credit," then every single one of these apps is in systemic violation of federal law. This failure to disclose allows consumers to sue for statutory damages and attorney's fees.
+
+## Why We Sue
+We are currently investigating and filing cases against fintech apps that use "dark patterns" and deceptive fee structures to trap consumers in cycles of high-interest debt. We seek to:
+
+1.  **Recoup Illegal Fees:** Getting your money back for every "tip" and "fee" you were forced or coerced into paying.
+2.  **Void the Debt:** In many usury cases, the underlying loan itself can be declared void and uncollectible under New York law.
+3.  **Statutory Damages:** Seeking penalties for the failure to provide mandatory federal TILA disclosures.
+4.  **Attorney’s Fees:** Under TILA and New York consumer laws, the app may be required to pay your legal fees, meaning you pay nothing out of pocket to hold them accountable.
+
+## Are You a Victim of App-Based Usury?
+If you have used apps like **Tilt, FloatMe, MoneyLion, or Dave** and feel like you are stuck in a loop of paying high fees just to access your own wages, you may have a significant legal claim. We specialize in the technical litigation required to reclassify these "tips" as illegal interest.
+`
+  },
   {
     slug: "ewa-usury",
     title: "Are “tips” and “express fees” on EWA apps actually illegal usury?",
