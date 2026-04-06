@@ -16,5 +16,19 @@ const description = resource.featuredSnippet?.answer || resource.content.substri
 ---
 
 <Layout title={title} description={description}>
+	{resource.featuredSnippet && (
+		<script type="application/ld+json" is:inline set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "FAQPage",
+			"mainEntity": [{
+				"@type": "Question",
+				"name": resource.featuredSnippet.question,
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": resource.featuredSnippet.answer
+				}
+			}]
+		})} />
+	)}
 	<ResourcePage slug={resource.slug} />
 </Layout>

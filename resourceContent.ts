@@ -573,12 +573,12 @@ If you take a $50 advance and pay a $5 "express fee" to get the money today, and
 *   You paid $5 to borrow $50 for one week.
 *   That is a **520% APR**.
 
-In New York, the civil usury cap is **16%** and the criminal usury cap is **25%**. By calling these costs "fees" instead of interest, these apps are attempting to bypass the laws that protect you from predatory lending.
+In New York, the civil usury cap is **16%** (N.Y. Gen. Oblig. Law § 5-501) and the criminal usury cap is **25%** (N.Y. Penal Law § 190.40). By calling these costs "fees" instead of interest, these apps are attempting to bypass the laws that protect you from predatory lending.
 
 ## The Truth in Lending Act (TILA) Violation
-The federal **Truth in Lending Act (TILA)** requires anyone extending credit to provide clear, standardized disclosures about the cost of that credit, including the **Annual Percentage Rate (APR)**.
+The federal **Truth in Lending Act (TILA)**, codified at **15 U.S.C. § 1601 et seq.**, requires anyone extending credit to provide clear, standardized disclosures about the cost of that credit, including the **Annual Percentage Rate (APR)**.
 
-Because these apps claim they aren't "lenders," they often provide zero TILA disclosures. If a court determines that these advances are, in fact, "credit," then every single one of these apps is in systemic violation of federal law. This failure to disclose allows consumers to sue for statutory damages and attorney's fees.
+Because these apps claim they aren't "lenders," they often provide zero TILA disclosures (Regulation Z, 12 C.F.R. Part 1026). If a court determines that these advances are, in fact, "credit," then every single one of these apps is in systemic violation of federal law. This failure to disclose allows consumers to sue for statutory damages and attorney's fees.
 
 ## Why We Sue
 We are currently investigating and filing cases against fintech apps that use "dark patterns" and deceptive fee structures to trap consumers in cycles of high-interest debt. We seek to:
