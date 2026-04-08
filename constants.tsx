@@ -14,7 +14,7 @@ export const NAV_ITEMS: NavItem[] = [
         { label: 'Mortgage Errors & Servicing Abuse', path: '/practice/mortgage/' },
         { label: 'Credit Reporting Errors & Identity Theft', path: '/practice/credit/' },
         { label: 'Debt Collection Harassment & Rights', path: '/practice/debt/' },
-        { label: 'Payment App Fraud & Bank Errors', path: '/practice/fintech/' },
+        { label: 'Fintech Usury & Disguised Loans', path: '/practice/fintech/' },
         { label: 'Bankruptcy Rights Violations', path: '/practice/bankruptcy/' },
     ]
   },
@@ -74,26 +74,26 @@ export const PRACTICE_AREAS: PracticeArea[] = [
       ],
       resources: [
         // The Basics (Notices & Requests)
-        { title: "How to send a Notice of Error that banks can’t ignore", slug: "notice-of-error-guide" },
-        { title: "How to send a qualified written request for information to your mortgage servicer under RESPA", slug: "qualified-written-request-guide" },
+        { title: "How to Send a Notice of Error That Banks Can’t Ignore", slug: "notice-of-error-guide" },
+        { title: "How to Send a Qualified Written Request for Information to Your Mortgage Servicer Under RESPA", slug: "qualified-written-request-guide" },
         
         // Common Problems (The "Why")
         { title: "The “Incomplete Application” Loop: Stopping the Loss Mitigation Runaround", slug: "incomplete-application-loop" },
-        { title: "Escrow Analysis Shock: Why did my payment double overnight?", slug: "escrow-analysis-shock" },
-        { title: "The Trial Period Plan (TPP) Trap: You made the payments, they denied the mod", slug: "trial-period-plan-trap" },
-        { title: "Suspense Accounts: Why your payment didn’t get credited to your balance", slug: "suspense-accounts" },
-        { title: "Force-Placed Insurance: Did your servicer buy a policy you didn’t need?", slug: "force-placed-insurance" },
-        { title: "The 60-Day Transfer Protection: You can’t be charged a late fee during a hand-off", slug: "transfer-protection" },
+        { title: "Escrow Analysis Shock: Why Did My Payment Double Overnight?", slug: "escrow-analysis-shock" },
+        { title: "The Trial Period Plan (TPP) Trap: You Made the Payments, They Denied the Mod", slug: "trial-period-plan-trap" },
+        { title: "Suspense Accounts: Why Your Payment Didn’t Get Credited to Your Balance", slug: "suspense-accounts" },
+        { title: "Force-Placed Insurance: Did Your Servicer Buy a Policy You Didn’t Need?", slug: "force-placed-insurance" },
+        { title: "The 60-Day Transfer Protection: You Can’t Be Charged a Late Fee During a Hand-Off", slug: "transfer-protection" },
         { title: "The New Rule 3002.1: A Powerful Weapon for Chapter 13 Debtors (2025 Update)", slug: "new-bankruptcy-rule-3002-1-update-2025" },
         
         // Litigation & Damages (The "So What")
-        { title: "Dual Tracking: Why they can’t foreclose while reviewing your modification", slug: "dual-tracking-foreclosure" },
-        { title: "What happens when your mortgage servicer refuses to correct its error", slug: "servicer-refuses-correction" },
-        { title: "What types of legal damages can be awarded under RESPA", slug: "respa-damages" },
+        { title: "Dual Tracking: Why They Can’t Foreclose While Reviewing Your Modification", slug: "dual-tracking-foreclosure" },
+        { title: "What Happens When Your Mortgage Servicer Refuses to Correct Its Error", slug: "servicer-refuses-correction" },
+        { title: "What Types of Legal Damages Can Be Awarded Under RESPA", slug: "respa-damages" },
         
         // Bankruptcy Specifics
-        { title: "Suing your mortgage servicer inside Chapter 13", slug: "suing-mortgage-servicer-chapter-13" },
-        { title: "When the Mortgage Math Doesn’t Add Up: Why your Chapter 13 discharge didn’t fix your arrears", slug: "mortgage-math-chapter-13" }
+        { title: "Suing Your Mortgage Servicer Inside Chapter 13", slug: "suing-mortgage-servicer-chapter-13" },
+        { title: "When the Mortgage Math Doesn’t Add Up: Why Your Chapter 13 Discharge Didn’t Fix Your Arrears", slug: "mortgage-math-chapter-13" }
       ],
       referral: {
         title: "A Boutique Trial Shop for Your Toughest Servicing Cases",
@@ -131,12 +131,12 @@ export const PRACTICE_AREAS: PracticeArea[] = [
       resources: [
         { title: "The “Verified” Trap: Why Your Dispute Was Rejected in 3 Days", slug: "credit-dispute-verified-trap" },
         { title: "Zombie Debt: Why Old Accounts Suddenly Reappear as “New”", slug: "zombie-debt-reaging" },
-        { title: "Mixed Files: What to do when someone else’s debt is on your report", slug: "mixed-files" },
+        { title: "Mixed Files: What to Do When Someone Else’s Debt Is on Your Report", slug: "mixed-files" },
         { title: "New York’s 2026 Ban on Employment Credit Checks", slug: "ny-employment-credit-ban" },
-        { title: "Identity Theft Recovery: Beyond the police report", slug: "identity-theft-recovery" },
-        { title: "Medical Debt: Why it shouldn’t be on your NY credit report", slug: "medical-debt-ny" },
-        { title: "What to do when the credit bureau says your error was “verified”", slug: "verified-error" },
-        { title: "Cleaning up After Bankruptcy: Why are negative accounts still showing up on my report?", slug: "credit-reporting-after-bankruptcy" }
+        { title: "Identity Theft Recovery: Beyond the Police Report", slug: "identity-theft-recovery" },
+        { title: "Medical Debt: Why It Shouldn’t Be on Your NY Credit Report", slug: "medical-debt-ny" },
+        { title: "What to Do When the Credit Bureau Says Your Error Was “Verified”", slug: "verified-error" },
+        { title: "Cleaning up After Bankruptcy: Why Are Negative Accounts Still Showing Up on My Report?", slug: "credit-reporting-after-bankruptcy" }
       ],
       referral: {
         title: "Proving Concrete Harm in New York",
@@ -151,7 +151,7 @@ export const PRACTICE_AREAS: PracticeArea[] = [
     description: 'Stopping wrongful garnishments, zombie debt, and harassing communications.',
     iconPath: ICONS.Harassment,
     content: {
-      heroText: "Protecting consumers from debt collection abuse",
+      heroText: "Protecting Consumers From Debt Collection Abuse",
       intro: "Federal and state laws—including the Fair Debt Collection Practices Act (FDCPA) and New York’s 2026 FAIR Act—strictly prohibit debt collectors from using abusive, deceptive, or unfair tactics to collect a debt. You have the legal right to stop the calls, dispute the debt, and sue for statutory damages and attorney’s fees if a collector crosses the line.",
       sections: [
         {
@@ -169,16 +169,16 @@ export const PRACTICE_AREAS: PracticeArea[] = [
         }
       ],
       resources: [
-        { title: "The “Sold” Discharge: Why a Debt Buyer is Calling About Your Bankrupt Account", slug: "zombie-debt-bankruptcy-discharge" },
+        { title: "The “Sold” Discharge: Why a Debt Buyer Is Calling About Your Bankrupt Account", slug: "zombie-debt-bankruptcy-discharge" },
         { title: "I Already Paid That! Suing Collectors Who Try to Collect the Same Debt Twice", slug: "collecting-paid-debt" },
         { title: "The “Same Name” Nightmare: When You Are Sued for a Stranger’s Debt", slug: "sued-wrong-person" },
         { title: "Phantom Payday Loans: The Scam That Uses Your Real Data", slug: "phantom-payday-loans" },
-        { title: "Can a debt collector use AI to text me?", slug: "ai-debt-collection" },
-        { title: "The FAIR Act: New York’s new Unfair & Abusive standard", slug: "fair-act-ny" },
-        { title: "Can a debt collector call me at work or contact my boss?", slug: "calls-at-work" },
-        { title: "Coerced Debt: Suing to clear your name after economic abuse", slug: "coerced-debt" },
-        { title: "How to stop debt collection calls: A step-by-step guide", slug: "stop-collection-calls" },
-        { title: "Debt collection after bankruptcy: What to do when a collector is hounding me for a debt I already handled in bankruptcy.", slug: "debt-collection-after-bankruptcy" }
+        { title: "Can a Debt Collector Use AI to Text Me?", slug: "ai-debt-collection" },
+        { title: "The FAIR Act: New York’s New Unfair & Abusive Standard", slug: "fair-act-ny" },
+        { title: "Can a Debt Collector Call Me at Work or Contact My Boss?", slug: "calls-at-work" },
+        { title: "Coerced Debt: Suing to Clear Your Name After Economic Abuse", slug: "coerced-debt" },
+        { title: "How to Stop Debt Collection Calls: A Step-by-Step Guide", slug: "stop-collection-calls" },
+        { title: "Debt Collection After Bankruptcy: What to Do When a Collector Is Hounding Me for a Debt I Already Handled in Bankruptcy", slug: "debt-collection-after-bankruptcy" }
       ],
       referral: {
         title: "A Federal Litigation Shop for FDCPA Violations",
@@ -188,44 +188,44 @@ export const PRACTICE_AREAS: PracticeArea[] = [
   },
   {
     id: 'fintech',
-    title: 'Payment App Fraud & Bank Errors',
-    subtitle: 'EFTA / TILA / Usury',
-    description: 'Recovering funds stolen through Zelle scams, unauthorized debits, and frozen neobank accounts.',
+    title: 'Fintech Usury & Disguised Loans',
+    subtitle: 'TILA / EFTA / Usury',
+    description: 'Challenging predatory cash advance apps, EWA usury, and unauthorized bank account debits.',
     iconPath: ICONS.Fintech,
     content: {
-      heroText: "Egregious Takings in the Digital Age",
-      intro: "Your digital wallet is protected by federal and state law. Under EFTA Regulation E and New York’s 2026 FAIR Act, financial institutions and payment apps (Zelle, Venmo, CashApp) are strictly required to investigate fraud, provide provisional credit during disputes, and honor your “stop payment” requests. If an app has frozen your account without explanation or a bank has refused to refund a Zelle scam, they are liable for statutory damages, triple damages for bad-faith investigations, and your attorney’s fees.",
+      heroText: "Is Your Cash Advance App a Disguised Payday Lender?",
+      intro: "Fintech apps like Dave, EarnIn, and MoneyLion claim their “tips” and “express fees” aren’t interest. In New York, we know better. Under state usury laws and the federal Truth in Lending Act (TILA), these are often illegal high-interest loans. We litigate to recoup fees, void predatory debt, and hold apps accountable for failing to disclose the true cost of credit.",
       sections: [
         {
-          title: "High-Impact Misconduct",
+          title: "Predatory Fintech Practices",
           bullets: [
-            { title: "The Zelle “Authorized” Trap", text: "Banks often refuse to refund Zelle fraud by claiming you authorized the transfer—even if you were tricked by a sophisticated imposter. Following the 2025 New York Attorney General lawsuit against Zelle (James v. EWS), we use evidence of the platform’s “frictionless” design flaws to hold banks accountable for these losses." },
-            { title: "Unauthorized Fintech Debits", text: "Cash advance and Earned Wage Access (EWA) apps often treat your bank account as their own. If an app has debited your account after you revoked authorization or ignored a stop payment order, they have committed a federal violation under Regulation E." },
-            { title: "Shadow Loans & Fintech Usury (TILA)", text: "Apps like Dave, MoneyLion, FloatMe, and Tilt claim their “tips” aren’t interest. Under New York usury laws and the federal Truth in Lending Act (TILA), these are often illegal high-interest loans. We sue to recoup fees and seek statutory damages for disclosure failures." },
-            { title: "The Neobank Freeze", text: "If a digital bank (like Chime, Dave, or CashApp) has frozen your account or “lost” your direct deposit, they are legally required to provide you with provisional credit within 10 days if their investigation isn’t finished. If they leave you with a $0 balance for weeks, we litigate to restore your access and seek damages for the hardship." }
+            { title: "Shadow Loans & Fintech Usury", text: "Apps that offer 'instant' advances often charge fees that, when calculated as an APR, exceed New York’s 16% usury cap. We reclassify these 'tips' as illegal interest to void the underlying debt." },
+            { title: "Unauthorized Account Debits", text: "If a cash advance or EWA app has debited your bank account after you revoked authorization or ignored a stop payment order, they have committed a federal violation under Regulation E." },
+            { title: "The Neobank Freeze", text: "When digital banks like Chime or CashApp freeze your account without providing provisional credit within 10 days, they are violating the EFTA. We litigate to restore access and seek damages for the hardship." },
+            { title: "Payment App Fraud (Zelle/Venmo)", text: "While we focus on usury, we also hold banks accountable for Zelle scams where they refuse to refund victims by claiming the fraud was 'authorized'." }
           ]
         },
         {
-          title: "The “Unfair & Abusive” Standard (Fintech 2026)",
+          title: "The “Unfair & Abusive” Standard (New York 2026)",
           content: "The FAIR Act, effective February 17, 2026, allows us to challenge fintech practices that take unreasonable advantage of a consumer’s lack of understanding. We use this new New York standard to litigate junk fees, deceptive app interfaces (Dark Patterns), and the aggressive steering of consumers into high-cost instant transfers."
         }
       ],
       resources: [
-        { title: "The 10-Day Rule: When Fintechs Fail to Give Provisional Credit", slug: "fintech-provisional-credit-10-day-rule" },
         { title: "Hidden Interest: Suing Cash Advance Apps for Usury and TILA Violations", slug: "cash-advance-app-usury-tila" },
-        { title: "Device vs. User: Why “IP Address Match” Is Not a Valid Investigation", slug: "fintech-ip-address-investigation" },
-        { title: "Zombie Subscriptions: When the Bank Keeps Paying After You Said Stop", slug: "zombie-subscriptions-stop-payment" },
-        { title: "The Zelle Loophole: When “Authorized” Transfers Are Actually Theft", slug: "zelle-fraud-loophole" },
+        { title: "Told Your Cash Advance App Isn’t a ‘Loan’? Why You May Be Owed a Full Refund", slug: "cash-advance-not-a-loan-refund" },
+        { title: "Is a $5 Cash Advance ‘Express Fee’ Actually an Illegal 400% Interest Rate?", slug: "express-fee-illegal-interest" },
+        { title: "Are “Tips” and “Express Fees” on EWA Apps Actually Illegal Usury?", slug: "ewa-usury" },
+        { title: "How to Stop an Online Lender From Emptying Your Bank Account: Your Rights Under New York and Federal Law", slug: "stop-online-lender-bank-drain" },
+        { title: "The 10-Day Rule: When Fintechs Fail to Give Provisional Credit", slug: "fintech-provisional-credit-10-day-rule" },
         { title: "Locked Out: When a Neobank Freezes Your Rent Money", slug: "neobank-account-freeze" },
-        { title: "Zelle Fraud Defense: How to fight back when the bank says no", slug: "zelle-fraud-defense" },
-        { title: "Zelle Authorized Scam: Why the bank is wrong about your authorization", slug: "zelle-authorized-scam" },
-        { title: "EWA Usury: Are Cash Advance Apps Illegal in New York?", slug: "ewa-usury" },
-        { title: "Neobank Freeze: What to do when your account is locked", slug: "neobank-freeze" },
-        { title: "Treble Damages: Suing for bad faith investigations", slug: "treble-damages-bad-faith" }
+        { title: "Zombie Subscriptions: When the Bank Keeps Paying After You Said Stop", slug: "zombie-subscriptions-stop-payment" },
+        { title: "The Fraud Defense: Getting Your Zelle Money Back", slug: "zelle-fraud-defense" },
+        { title: "What to Do When Your Bank Says a Zelle Scam Was “Authorized”", slug: "zelle-authorized-scam" },
+        { title: "Treble Damages: When a Bank’s Bad Faith Investigation Pays Triple", slug: "treble-damages-bad-faith" }
       ],
       referral: {
-        title: "A Litigation Partner for Digital Fraud",
-        text: "Many firms turn away Zelle and Venmo fraud cases because they assume the “authorized” defense is unbeatable. I specialize in the technical discovery required to overcome that defense. By leveraging the 2025 NYAG findings and the CFPB’s 2025 interpretive rules on digital wallets, I can identify the specific security failures that shift liability back to the institution. If you have a client whose life savings were drained in a digital minute, I am available to handle the federal litigation or co-counsel on the EFTA claims."
+        title: "A Technical Resource for Fintech Usury",
+        text: "Many firms view $5 fees as too small to litigate. I view them as the foundation for systemic usury claims. By leveraging New York’s strict interest caps and the federal Truth in Lending Act, I can identify the 'dark patterns' that turn optional tips into mandatory interest. If you have clients trapped in a cycle of fintech debt, I am available for co-counsel or referral to handle the technical usury and TILA litigation."
       }
     }
   },
@@ -256,12 +256,12 @@ export const PRACTICE_AREAS: PracticeArea[] = [
       resources: [
         { title: "The “Notice of Fees” Trap: Why Your Mortgage Servicer Is Hiding Costs in Chapter 13", slug: "bankruptcy-rule-3002-1-hidden-fees" },
         { title: "The New Rule 3002.1: A Powerful Weapon for Chapter 13 Debtors (2025 Update)", slug: "new-bankruptcy-rule-3002-1-update-2025" },
-        { title: "The Automatic Stay: Your shield against immediate collection", slug: "automatic-stay" },
-        { title: "Discharge Injunctions: What to do if a creditor calls after your case is closed", slug: "discharge-injunction" },
-        { title: "Adversary Proceedings: When bankruptcy becomes a federal lawsuit", slug: "adversary-proceedings" },
-        { title: "Can I discharge Fintech and “Buy Now, Pay Later” loans?", slug: "discharge-fintech-loans" },
-        { title: "Cleaning up After Bankruptcy: Why are negative accounts still showing up on my report?", slug: "credit-reporting-after-bankruptcy" },
-        { title: "Debt collection after bankruptcy: What to do when a collector is hounding me for a debt I already handled in bankruptcy.", slug: "debt-collection-after-bankruptcy" }
+        { title: "The Automatic Stay: Your Shield Against Immediate Collection", slug: "automatic-stay" },
+        { title: "Discharge Injunctions: What to Do if a Creditor Calls After Your Case Is Closed", slug: "discharge-injunction" },
+        { title: "Adversary Proceedings: When Bankruptcy Becomes a Federal Lawsuit", slug: "adversary-proceedings" },
+        { title: "Can I Discharge Fintech and “Buy Now, Pay Later” Loans?", slug: "discharge-fintech-loans" },
+        { title: "Cleaning up After Bankruptcy: Why Are Negative Accounts Still Showing Up on My Report?", slug: "credit-reporting-after-bankruptcy" },
+        { title: "Debt Collection After Bankruptcy: What to Do When a Collector Is Hounding Me for a Debt I Already Handled in Bankruptcy", slug: "debt-collection-after-bankruptcy" }
       ],
       referral: {
         title: "A Technical Resource for Complex APs",

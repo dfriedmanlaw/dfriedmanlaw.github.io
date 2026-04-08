@@ -14,12 +14,12 @@ export const RESOURCES: ResourceContent[] = [
   // Mortgage Servicing
   {
     slug: "notice-of-error-guide",
-    title: "How to send a Notice of Error that banks can’t ignore",
+    title: "How to Send a Notice of Error That Banks Can’t Ignore",
     category: "Mortgage Servicing",
     relatedSlugs: ["suspense-accounts", "force-placed-insurance", "transfer-protection"],
     featuredSnippet: {
       question: "How do I send a Notice of Error to my mortgage servicer?",
-      answer: "To send a valid Notice of Error (NOE) under RESPA, you must send a separate written document to the servicer's designated NOE address via Certified Mail. The letter must include your name, account number, a clear description of the error, and a demand for correction within 30 days."
+      answer: "To send a valid Notice of Error (NOE) under RESPA, you must send a separate written document to the servicer’s designated NOE address via Certified Mail. The letter must include your name, account number, a clear description of the error, and a demand for correction within 30 days."
     },
     content: `
 # How to Send a Notice of Error That Banks Can’t Ignore
@@ -41,7 +41,7 @@ Simply writing “I dispute this” on your monthly statement is not a Notice of
 
 Check your monthly mortgage statement (often on the back) or the servicer’s website for the “Notice of Error” or “Qualified Written Request” mailing address. Sending it to the general payment address may not trigger legal protections.
 
-## Certified Mail is Mandatory
+## Certified Mail Is Mandatory
 
 Always send your NOE via Certified Mail, Return Receipt Requested. The “green card” is your proof that the 5-day acknowledgment clock and the 30-day investigation clock have started. Without this proof, a servicer can simply claim they never received it.
 
@@ -55,7 +55,7 @@ If they fail to do this, or if they “rubber stamp” a denial without looking 
   },
   {
     slug: "suing-mortgage-servicer-chapter-13",
-    title: "Suing your mortgage servicer inside Chapter 13",
+    title: "Suing Your Mortgage Servicer Inside Chapter 13",
     category: "Mortgage Servicing",
     relatedSlugs: ["new-bankruptcy-rule-3002-1-update-2025", "notice-of-error-guide"],
     content: `
@@ -86,7 +86,7 @@ The best time to catch these errors is *during* the Chapter 13 case, not after. 
   },
   {
     slug: "force-placed-insurance",
-    title: "Force-Placed Insurance: Did your servicer buy a policy you didn’t need?",
+    title: "Force-Placed Insurance: Did Your Servicer Buy a Policy You Didn’t Need?",
     category: "Mortgage Servicing",
     relatedSlugs: ["notice-of-error-guide", "suspense-accounts"],
     content: `
@@ -119,7 +119,7 @@ If you have been hit with a force-placed insurance premium:
   },
   {
     slug: "suspense-accounts",
-    title: "Suspense Accounts: Why your payment didn’t get credited to your balance",
+    title: "Suspense Accounts: Why Your Payment Didn’t Get Credited to Your Balance",
     category: "Mortgage Servicing",
     relatedSlugs: ["notice-of-error-guide", "mortgage-math-chapter-13"],
     content: `
@@ -127,7 +127,7 @@ If you have been hit with a force-placed insurance premium:
 
 You sent your mortgage check. It cleared your bank. But your mortgage statement shows the loan is past due. Where did the money go? It is likely sitting in a “Suspense Account” (also called “Unapplied Funds”).
 
-## What is a Suspense Account?
+## What Is a Suspense Account?
 
 A suspense account is a holding bucket for partial payments. Under the terms of most mortgage notes, a servicer is not required to apply a payment to principal and interest unless it is a *full* payment (P&I + Escrow). If you are short by even a penny, they can hold the entire amount in suspense.
 
@@ -153,7 +153,7 @@ If your funds are stuck in suspense:
   },
   {
     slug: "transfer-protection",
-    title: "The 60-Day Transfer Protection: You can’t be charged a late fee during a hand-off",
+    title: "The 60-Day Transfer Protection: You Can’t Be Charged a Late Fee During a Hand-Off",
     category: "Mortgage Servicing",
     relatedSlugs: ["notice-of-error-guide", "suspense-accounts"],
     content: `
@@ -184,12 +184,12 @@ Recognizing this risk, federal law (RESPA) provides a 60-day safe harbor for bor
   // Credit Reporting
   {
     slug: "mixed-files",
-    title: "Mixed Files: What to do when someone else’s debt is on your report",
+    title: "Mixed Files: What to Do When Someone Else’s Debt Is on Your Report",
     category: "Credit Reporting",
     relatedSlugs: ["credit-dispute-verified-trap", "sued-wrong-person", "identity-theft-recovery"],
     featuredSnippet: {
       question: "What is a mixed credit file and how do I fix it?",
-      answer: "A mixed credit file occurs when a credit bureau merges your financial data with another person's. To fix it, you must file a written dispute via certified mail identifying the stranger's accounts and demand a manual file separation. If the bureau fails to correct it, you may have a claim under the FCRA."
+      answer: "A mixed credit file occurs when a credit bureau merges your financial data with another person’s. To fix it, you must file a written dispute via certified mail identifying the stranger’s accounts and demand a manual file separation. If the bureau fails to correct it, you may have a claim under the FCRA."
     },
     content: `
 # Mixed Files: The “John Smith” Problem
@@ -251,7 +251,7 @@ If you lost a job opportunity because of an illegal credit check, or because of 
   },
   {
     slug: "identity-theft-recovery",
-    title: "Identity Theft Recovery: Beyond the police report",
+    title: "Identity Theft Recovery: Beyond the Police Report",
     category: "Credit Reporting",
     relatedSlugs: ["phantom-payday-loans", "mixed-files", "credit-dispute-verified-trap"],
     content: `
@@ -278,7 +278,7 @@ Bureaus often reject these requests, claiming the police report is “insufficie
   },
   {
     slug: "medical-debt-ny",
-    title: "Medical Debt: Why it shouldn’t be on your NY credit report",
+    title: "Medical Debt: Why It Shouldn’t Be on Your NY Credit Report",
     category: "Credit Reporting",
     relatedSlugs: ["ny-employment-credit-ban", "credit-dispute-verified-trap"],
     content: `
@@ -307,7 +307,7 @@ If you see a medical collection on your credit report:
   },
   {
     slug: "verified-error",
-    title: "What to do when the credit bureau says your error was “verified”",
+    title: "What to Do When the Credit Bureau Says Your Error Was “Verified”",
     category: "Credit Reporting",
     relatedSlugs: ["credit-dispute-verified-trap", "notice-of-error-guide"],
     content: `
@@ -336,7 +336,7 @@ We sue to force the bureaus to have a *human* look at your file, not just a comp
   // Debt Collection
   {
     slug: "ai-debt-collection",
-    title: "Can a debt collector use AI to text me?",
+    title: "Can a Debt Collector Use AI to Text Me?",
     category: "Debt Collection",
     relatedSlugs: ["calls-at-work", "stop-collection-calls"],
     content: `
@@ -369,7 +369,7 @@ If you suspect you are being harassed by a bot:
   },
   {
     slug: "fair-act-ny",
-    title: "The FAIR Act: New York’s new Unfair & Abusive standard",
+    title: "The FAIR Act: New York’s New Unfair & Abusive Standard",
     category: "Debt Collection",
     relatedSlugs: ["ewa-usury", "ai-debt-collection"],
     content: `
@@ -401,7 +401,7 @@ We are using the FAIR Act to challenge:
   },
   {
     slug: "stop-collection-calls",
-    title: "Stop collection calls for someone else’s debt",
+    title: "Stop Collection Calls for Someone Else’s Debt",
     category: "Debt Collection",
     relatedSlugs: ["sued-wrong-person", "ai-debt-collection"],
     content: `
@@ -428,7 +428,7 @@ Once you tell a debt collector “I am not this person” or “Stop calling thi
   },
   {
     slug: "calls-at-work",
-    title: "Can a debt collector call me at work or contact my boss?",
+    title: "Can a Debt Collector Call Me at Work or Contact My Boss?",
     category: "Debt Collection",
     relatedSlugs: ["stop-collection-calls", "ai-debt-collection"],
     content: `
@@ -459,7 +459,7 @@ If a collector is threatening your employment, contact a consumer attorney immed
   },
   {
     slug: "coerced-debt",
-    title: "Coerced Debt: Suing to clear your name after economic abuse",
+    title: "Coerced Debt: Suing to Clear Your Name After Economic Abuse",
     category: "Debt Collection",
     relatedSlugs: ["identity-theft-recovery", "mixed-files"],
     content: `
@@ -491,12 +491,12 @@ You should not have to pay for your own abuse.
   // Fintech
   {
     slug: "zelle-fraud-defense",
-    title: "The fraud defense: Getting your Zelle money back",
+    title: "The Fraud Defense: Getting Your Zelle Money Back",
     category: "Fintech",
     relatedSlugs: ["zelle-authorized-scam", "fintech-provisional-credit-10-day-rule"],
     featuredSnippet: {
       question: "Can I get my money back from a Zelle scam?",
-      answer: "Yes, you can potentially recover Zelle funds under Regulation E if the transfer was 'unauthorized.' While banks argue that scams are authorized because you pressed the button, federal guidance suggests that fraud vitiates consent, making transfers induced by impersonation scams legally unauthorized."
+      answer: "Yes, you can potentially recover Zelle funds under Regulation E if the transfer was ‘unauthorized.’ While banks argue that scams are authorized because you pressed the button, federal guidance suggests that fraud vitiates consent, making transfers induced by impersonation scams legally unauthorized."
     },
     content: `
 # Zelle Fraud: The “Authorized” Loophole
@@ -529,7 +529,7 @@ If you were scammed on Zelle:
   },
   {
     slug: "zelle-authorized-scam",
-    title: "What to do when your bank says a Zelle scam was “authorized”",
+    title: "What to Do When Your Bank Says a Zelle Scam Was “Authorized”",
     category: "Fintech",
     relatedSlugs: ["zelle-fraud-defense", "treble-damages-bad-faith"],
     content: `
@@ -552,51 +552,51 @@ Banks rely on a narrow interpretation of the law. They believe “authorized” 
 Banks hate litigating these cases because it exposes their security flaws. Often, a well-drafted legal complaint citing the specific failures in their authentication process can force a settlement where a customer service call failed.
 `
   },
-    {
+  {
     slug: "cash-advance-app-usury-tila",
     title: "Hidden Interest: Suing Cash Advance Apps for Usury and TILA Violations",
     category: "Fintech",
-    relatedSlugs: ["ewa-usury", "fair-act-ny", "treble-damages-bad-faith"],
+    relatedSlugs: ["ewa-usury", "fair-act-ny", "treble-damages-bad-faith", "cash-advance-not-a-loan-refund", "express-fee-illegal-interest"],
     featuredSnippet: {
       question: "Are cash advance app fees considered illegal interest?",
-      answer: "Yes, in many cases. While apps like Dave, MoneyLion, and Tilt call their costs 'tips' or 'express fees,' when calculated as an APR, they often exceed New York's 16% usury cap. If these apps are deemed lenders, they are also in violation of the Truth in Lending Act (TILA) for failing to disclose these costs as interest."
+      answer: "Yes, in many cases. While apps like Dave, MoneyLion, and Tilt call their costs ‘tips’ or ‘express fees,’ when calculated as an APR, they often exceed New York’s 16% usury cap. If these apps are deemed lenders, they are also in violation of the Truth in Lending Act (TILA) for failing to disclose these costs as interest."
     },
     content: `
 # Hidden Interest: Is Your Cash Advance App Violating Usury Laws or TILA?
 
-Cash advance apps like **Dave, MoneyLion, FloatMe, and Tilt** have exploded in popularity by promising "interest-free" advances to help you bridge the gap between paychecks. They claim they aren't lenders and that their costs—often called "tips," "express fees," or "monthly memberships"—are optional.
+Cash advance apps like **Dave, MoneyLion, FloatMe, and Tilt** have exploded in popularity by promising “interest-free” advances to help you bridge the gap between paychecks. They claim they aren’t lenders and that their costs—often called “tips,” “express fees,” or “monthly memberships”—are optional.
 
-However, when you do the math, these "fees" often translate into astronomical interest rates that far exceed New York's legal limits.
+However, when you do the math, these “fees” often translate into astronomical interest rates that far exceed New York’s legal limits.
 
-## The Math of a "Small" Fee
-If you take a $50 advance and pay a $5 "express fee" to get the money today, and you pay it back in 7 days when your paycheck hits:
+## The Math of a “Small” Fee
+If you take a $50 advance and pay a $5 “express fee” to get the money today, and you pay it back in 7 days when your paycheck hits:
 *   You paid $5 to borrow $50 for one week.
 *   That is a **520% APR**.
 
-In New York, the civil usury cap is **16%** (N.Y. Gen. Oblig. Law § 5-501) and the criminal usury cap is **25%** (N.Y. Penal Law § 190.40). By calling these costs "fees" instead of interest, these apps are attempting to bypass the laws that protect you from predatory lending.
+In New York, the civil usury cap is **16%** (N.Y. Gen. Oblig. Law § 5-501) and the criminal usury cap is **25%** (N.Y. Penal Law § 190.40). By calling these costs “fees” instead of interest, these apps are attempting to bypass the laws that protect you from predatory lending.
 
 ## The Truth in Lending Act (TILA) Violation
 The federal **Truth in Lending Act (TILA)**, codified at **15 U.S.C. § 1601 et seq.**, requires anyone extending credit to provide clear, standardized disclosures about the cost of that credit, including the **Annual Percentage Rate (APR)**.
 
-Because these apps claim they aren't "lenders," they often provide zero TILA disclosures (Regulation Z, 12 C.F.R. Part 1026). If a court determines that these advances are, in fact, "credit," then every single one of these apps is in systemic violation of federal law. This failure to disclose allows consumers to sue for statutory damages and attorney's fees.
+Because these apps claim they aren’t “lenders,” they often provide zero TILA disclosures (Regulation Z, 12 C.F.R. Part 1026). If a court determines that these advances are, in fact, “credit,” then every single one of these apps is in systemic violation of federal law. This failure to disclose allows consumers to sue for statutory damages and attorney’s fees.
 
 ## Why We Sue
-We are currently investigating and filing cases against fintech apps that use "dark patterns" and deceptive fee structures to trap consumers in cycles of high-interest debt. We seek to:
+We are currently investigating and filing cases against fintech apps that use “dark patterns” and deceptive fee structures to trap consumers in cycles of high-interest debt. We seek to:
 
-1.  **Recoup Illegal Fees:** Getting your money back for every "tip" and "fee" you were forced or coerced into paying.
+1.  **Recoup Illegal Fees:** Getting your money back for every “tip” and “fee” you were forced or coerced into paying.
 2.  **Void the Debt:** In many usury cases, the underlying loan itself can be declared void and uncollectible under New York law.
 3.  **Statutory Damages:** Seeking penalties for the failure to provide mandatory federal TILA disclosures.
 4.  **Attorney’s Fees:** Under TILA and New York consumer laws, the app may be required to pay your legal fees, meaning you pay nothing out of pocket to hold them accountable.
 
 ## Are You a Victim of App-Based Usury?
-If you have used apps like **Tilt, FloatMe, MoneyLion, or Dave** and feel like you are stuck in a loop of paying high fees just to access your own wages, you may have a significant legal claim. We specialize in the technical litigation required to reclassify these "tips" as illegal interest.
+If you have used apps like **Tilt, FloatMe, MoneyLion, or Dave** and feel like you are stuck in a loop of paying high fees just to access your own wages, you may have a significant legal claim. We specialize in the technical litigation required to reclassify these “tips” as illegal interest.
 `
   },
   {
     slug: "ewa-usury",
-    title: "Are “tips” and “express fees” on EWA apps actually illegal usury?",
+    title: "Are “Tips” and “Express Fees” on EWA Apps Actually Illegal Usury?",
     category: "Fintech",
-    relatedSlugs: ["fair-act-ny", "zombie-subscriptions-stop-payment"],
+    relatedSlugs: ["fair-act-ny", "zombie-subscriptions-stop-payment", "cash-advance-app-usury-tila", "express-fee-illegal-interest"],
     content: `
 # Earned Wage Access: The New Payday Loan?
 
@@ -626,7 +626,7 @@ If you are trapped in a cycle of EWA debt:
   },
   {
     slug: "neobank-freeze",
-    title: "Neobanks & Frozen Accounts: Your right to a 10-day investigation",
+    title: "Neobanks & Frozen Accounts: Your Right to a 10-Day Investigation",
     category: "Fintech",
     relatedSlugs: ["fintech-provisional-credit-10-day-rule", "neobank-account-freeze"],
     content: `
@@ -655,7 +655,7 @@ We file federal lawsuits to force these apps to unlock your money and follow the
   },
   {
     slug: "treble-damages-bad-faith",
-    title: "Treble Damages: When a bank’s bad faith investigation pays triple",
+    title: "Treble Damages: When a Bank’s Bad Faith Investigation Pays Triple",
     category: "Fintech",
     relatedSlugs: ["fintech-provisional-credit-10-day-rule", "neobank-freeze"],
     content: `
@@ -683,11 +683,10 @@ If their refusal to refund $2,000 caused you to lose your apartment (damages of 
 This provision forces banks to take investigations seriously—if you have an attorney who knows how to plead it.
 `
   },
-
   // Bankruptcy
   {
     slug: "automatic-stay",
-    title: "The Automatic Stay: Your shield against immediate collection",
+    title: "The Automatic Stay: Your Shield Against Immediate Collection",
     category: "Bankruptcy",
     relatedSlugs: ["discharge-injunction", "adversary-proceedings"],
     content: `
@@ -717,12 +716,12 @@ If a creditor knows you filed for bankruptcy and continues to collect, they are 
 
 ## Making Them Pay
 
-We file motions or adversary proceedings to enforce the stay. We don’t just get the activity stopped; we seek checks for our clients to compensate them for the stress and violation of their federal rights.
+We file motions or adversary proceedings to enforce the stay. We don’t just get the activity stopped; we seek checks for our clients’ to compensate them for the stress and violation of their federal rights.
 `
   },
   {
     slug: "rule-3002-1-mortgage",
-    title: "Rule 3002.1: Suing mortgage servicers for hidden fees in Chapter 13",
+    title: "Rule 3002.1: Suing Mortgage Servicers for Hidden Fees in Chapter 13",
     category: "Bankruptcy",
     relatedSlugs: ["new-bankruptcy-rule-3002-1-update-2025"],
     content: `
@@ -751,7 +750,7 @@ At the end of your Chapter 13, the Trustee files a “Notice of Final Cure.” T
   },
   {
     slug: "discharge-injunction",
-    title: "Discharge Injunctions: What to do if a creditor calls after your case is closed",
+    title: "Discharge Injunctions: What to Do if a Creditor Calls After Your Case Is Closed",
     category: "Bankruptcy",
     relatedSlugs: ["zombie-debt-bankruptcy-discharge", "automatic-stay"],
     content: `
@@ -777,7 +776,7 @@ If a creditor violates the discharge:
   },
   {
     slug: "adversary-proceedings",
-    title: "Adversary Proceedings: When bankruptcy becomes a federal lawsuit",
+    title: "Adversary Proceedings: When Bankruptcy Becomes a Federal Lawsuit",
     category: "Bankruptcy",
     relatedSlugs: ["automatic-stay", "discharge-injunction"],
     content: `
@@ -799,7 +798,7 @@ Many high-volume bankruptcy mills do not handle APs. They refer them out or tell
   },
   {
     slug: "discharge-fintech-loans",
-    title: "Can I discharge Fintech and “Buy Now, Pay Later” loans?",
+    title: "Can I Discharge Fintech and “Buy Now, Pay Later” Loans?",
     category: "Bankruptcy",
     relatedSlugs: ["ewa-usury", "new-bankruptcy-rule-3002-1-update-2025"],
     content: `
@@ -826,7 +825,7 @@ Timing is everything. We advise clients on when to file to minimize the risk of 
   },
   {
     slug: "mortgage-math-chapter-13",
-    title: "When the Mortgage Math Doesn’t Add Up: Why your Chapter 13 discharge didn’t fix your arrears",
+    title: "When the Mortgage Math Doesn’t Add Up: Why Your Chapter 13 Discharge Didn’t Fix Your Arrears",
     category: "Mortgage Servicing",
     relatedSlugs: ["suing-mortgage-servicer-chapter-13", "new-bankruptcy-rule-3002-1-update-2025"],
     content: `
@@ -861,7 +860,7 @@ If your servicer is demanding money that should have been paid or discharged in 
   },
   {
     slug: "credit-reporting-after-bankruptcy",
-    title: "Cleaning up After Bankruptcy: Why are negative accounts still showing up on my report?",
+    title: "Cleaning Up After Bankruptcy: Why Are Negative Accounts Still Showing Up on My Report?",
     category: "Credit Reporting",
     relatedSlugs: ["zombie-debt-bankruptcy-discharge", "discharge-injunction"],
     content: `
@@ -880,7 +879,7 @@ After your Discharge Order is entered:
 ## Common Violations
 
 *   **Reporting a Balance:** Keeping a $5,000 balance on a discharged credit card is illegal. It looks like you still owe the money.
-*   **”Charge Off”:** Reporting the account as a current “Charge Off” every month updates the “Date of Last Activity,” making the negative item look fresh.
+*   **“Charge Off”:** Reporting the account as a current “Charge Off” every month updates the “Date of Last Activity,” making the negative item look fresh.
 *   **Debt Buyers:** Selling the debt to a junk debt buyer who then opens a *new* collection account on your report.
 
 ## The Fix
@@ -891,7 +890,7 @@ After your Discharge Order is entered:
   },
   {
     slug: "debt-collection-after-bankruptcy",
-    title: "Debt collection after bankruptcy: What to do when a collector is hounding me for a debt I already handled in bankruptcy.",
+    title: "Debt Collection After Bankruptcy: What to Do When a Collector Is Hounding Me for a Debt I Already Handled in Bankruptcy",
     category: "Bankruptcy",
     content: `
 # Debt Collection After Bankruptcy
@@ -919,14 +918,14 @@ If a collector is hounding you for discharged debt:
   },
   {
     slug: "qualified-written-request-guide",
-    title: "How to send a qualified written request for information to your mortgage servicer under RESPA",
+    title: "How to Send a Qualified Written Request for Information to Your Mortgage Servicer Under RESPA",
     category: "Mortgage Servicing",
     content: `
 # How to Send a Qualified Written Request (QWR) Under RESPA
 
 If you are confused about your mortgage balance, fees, or who actually owns your loan, you have a federal right to demand answers. This is called a **Qualified Written Request (QWR)**, also known as a **Request for Information (RFI)** under Regulation X (12 C.F.R. § 1024.36).
 
-## What is a QWR?
+## What Is a QWR?
 
 A QWR is a formal letter that triggers a legal duty for your mortgage servicer to provide specific information about your loan. Unlike a customer service call, a QWR forces the servicer to go on the record.
 
@@ -959,7 +958,7 @@ If the servicer fails to respond or provides incomplete information, they may be
   },
   {
     slug: "servicer-refuses-correction",
-    title: "What happens when your mortgage servicer refuses to correct its error",
+    title: "What Happens When Your Mortgage Servicer Refuses to Correct Its Error",
     category: "Mortgage Servicing",
     content: `
 # What Happens When Your Mortgage Servicer Refuses to Correct Its Error?
@@ -994,7 +993,7 @@ A denial letter is not the end of the road. It is often the evidence we need to 
   },
   {
     slug: "respa-damages",
-    title: "What types of legal damages can be awarded under RESPA",
+    title: "What Types of Legal Damages Can Be Awarded Under RESPA",
     category: "Mortgage Servicing",
     content: `
 # What Damages Can You Recover Under RESPA?
@@ -1004,14 +1003,14 @@ When a mortgage servicer violates the Real Estate Settlement Procedures Act (RES
 ## 1. Actual Damages
 This is the money you lost or the harm you suffered because of the servicer’s error.
 *   **Economic Damages:** Late fees charged wrongly, postage costs for sending your disputes, time spent on the phone (lost wages), or credit monitoring fees.
-*   **Non-Economic Damages:** Federal courts have recognized that "actual damages" includes **emotional distress**. The stress, anxiety, and frustration of dealing with a servicer who refuses to fix a critical error—especially when foreclosure is threatened—is compensable.
+*   **Non-Economic Damages:** Federal courts have recognized that “actual damages” includes **emotional distress**. The stress, anxiety, and frustration of dealing with a servicer who refuses to fix a critical error—especially when foreclosure is threatened—is compensable.
 
 ## 2. Statutory Damages
-If we can prove that the servicer has a "pattern or practice" of noncompliance, the judge can award up to **$2,000 per violation** in additional statutory damages. This is "penalty money" designed to punish the servicer, regardless of your actual loss.
+If we can prove that the servicer has a “pattern or practice” of noncompliance, the judge can award up to **$2,000 per violation** in additional statutory damages. This is “penalty money” designed to punish the servicer, regardless of your actual loss.
 *   *Example:* If a servicer systematically fails to acknowledge Notices of Error for hundreds of customers, that is a pattern or practice.
 
 ## 3. Attorney’s Fees and Costs
-This is the "fee-shifting" provision that makes this litigation possible.
+This is the “fee-shifting” provision that makes this litigation possible.
 *   If you win your case (or reach a favorable settlement), the mortgage servicer is required to pay **your reasonable attorney’s fees**.
 *   This allows us to represent homeowners on a contingency or hybrid basis. You don’t have to be rich to sue a bank; you just need a valid claim.
 
@@ -1021,7 +1020,7 @@ Banks rely on the fact that most people can’t afford to pay a lawyer $400/hour
   },
   {
     slug: "incomplete-application-loop",
-    title: "The \"Incomplete Application\" Loop: Stopping the Loss Mitigation Runaround",
+    title: "The “Incomplete Application” Loop: Stopping the Loss Mitigation Runaround",
     category: "Mortgage Servicing",
     content: `
 # The “Incomplete Application” Loop: Stopping the Loss Mitigation Runaround
@@ -1050,7 +1049,7 @@ We don’t just keep sending documents. We send a **Notice of Error** citing the
   },
   {
     slug: "dual-tracking-foreclosure",
-    title: "Dual Tracking: Why they can’t foreclose while reviewing your modification",
+    title: "Dual Tracking: Why They Can’t Foreclose While Reviewing Your Modification",
     category: "Mortgage Servicing",
     content: `
 # Dual Tracking: Why They Can’t Foreclose While Reviewing Your Modification
@@ -1074,7 +1073,7 @@ If a servicer tries to sell your home while your application is pending review, 
   },
   {
     slug: "trial-period-plan-trap",
-    title: "The Trial Period Plan (TPP) Trap: You made the payments, they denied the mod",
+    title: "The Trial Period Plan (TPP) Trap: You Made the Payments, They Denied the Mod",
     category: "Mortgage Servicing",
     content: `
 # The Trial Period Plan (TPP) Trap
@@ -1102,7 +1101,7 @@ If you completed a TPP and were denied, do not accept it. We litigate these case
   },
   {
     slug: "escrow-analysis-shock",
-    title: "Escrow Analysis Shock: Why did my payment double overnight?",
+    title: "Escrow Analysis Shock: Why Did My Payment Double Overnight?",
     category: "Mortgage Servicing",
     content: `
 # Escrow Analysis Shock: Why Did My Payment Double?
@@ -1193,11 +1192,11 @@ If a debt buyer has re-aged an old debt to pollute your credit report:
   },
   {
     slug: "zombie-debt-bankruptcy-discharge",
-    title: "The “Sold” Discharge: Why a Debt Buyer is Calling About Your Bankrupt Account",
+    title: "The “Sold” Discharge: Why a Debt Buyer Is Calling About Your Bankrupt Account",
     category: "Debt Collection",
     relatedSlugs: ["credit-reporting-after-bankruptcy", "discharge-injunction"],
     content: `
-# The “Sold” Discharge: Why a Debt Buyer is Calling About Your Bankrupt Account
+# The “Sold” Discharge: Why a Debt Buyer Is Calling About Your Bankrupt Account
 
 You filed for Chapter 7 bankruptcy two years ago. You received your discharge. You thought you were free.
 
@@ -1366,9 +1365,9 @@ The CFPB has made it clear that a financial institution cannot rely solely on te
 
 ## Context Matters
 
-A "reasonable investigation" must consider the **context**. Did you file a police report? Did you provide a sworn affidavit? Did the thief drain your entire savings in 5 minutes at 3:00 AM?
+A “reasonable investigation” must consider the **context**. Did you file a police report? Did you provide a sworn affidavit? Did the thief drain your entire savings in 5 minutes at 3:00 AM?
 
-If a bank ignores your police report and relies entirely on a "device match" to deny your claim, they have failed to conduct a reasonable investigation under Regulation E. We sue to force them to look at the real evidence.
+If a bank ignores your police report and relies entirely on a “device match” to deny your claim, they have failed to conduct a reasonable investigation under Regulation E. We sue to force them to look at the real evidence.
 `
   },
   {
@@ -1455,7 +1454,7 @@ When a bank freezes your primary checking account, the damages are massive. You 
 
 You are in a Chapter 13 bankruptcy. You have been making your plan payments faithfully for 5 years. You are about to receive your discharge and start fresh.
 
-Then, your mortgage servicer hits you with a surprise bill: **“$5,000 in “legal fees,” “property inspections,” and “corporate advances” from three years ago.**
+Then, your mortgage servicer hits you with a surprise bill: **“$5,000 in ‘legal fees,’ ‘property inspections,’ and ‘corporate advances’ from three years ago.**
 
 They claim you have to pay this immediately or face foreclosure the day after your bankruptcy ends.
 
@@ -1463,7 +1462,7 @@ This is a common trap. And under the Federal Rules of Bankruptcy Procedure, it i
 
 ## The 180-Day Rule (Rule 3002.1(c))
 
-Bankruptcy Rule 3002.1 was created to stop this exact scenario. It requires mortgage servicers to file a **"Notice of Postpetition Mortgage Fees, Expenses, and Charges"** (Official Form 410S2) within **180 days** of incurring any fee.
+Bankruptcy Rule 3002.1 was created to stop this exact scenario. It requires mortgage servicers to file a **“Notice of Postpetition Mortgage Fees, Expenses, and Charges”** (Official Form 410S2) within **180 days** of incurring any fee.
 
 If they charge you a $50 inspection fee on January 1st, they must file the notice with the court by roughly July 1st.
 
@@ -1489,9 +1488,9 @@ Effective December 1, 2025, the Federal Rules of Bankruptcy Procedure regarding 
 ## Key Changes You Need to Know
 
 ### 1. The 180-Day Rule (Rule 3002.1(c))
-Bankruptcy Rule 3002.1 requires mortgage servicers to file a **"Notice of Postpetition Mortgage Fees, Expenses, and Charges"** (Official Form 410S2) within **180 days** of incurring any fee. If they fail to file this notice on time, the court can **bar them from collecting the fee.**
+Bankruptcy Rule 3002.1 requires mortgage servicers to file a **“Notice of Postpetition Mortgage Fees, Expenses, and Charges”** (Official Form 410S2) within **180 days** of incurring any fee. If they fail to file this notice on time, the court can **bar them from collecting the fee.**
 
-### 2. The “Motion to Determine Status” is Now Mandatory
+### 2. The “Motion to Determine Status” Is Now Mandatory
 Previously, filing a motion to check if your mortgage was current at the end of a case was optional. Now, the process is more streamlined and aggressive. The new rule creates a clear path for a **binding court order** that determines exactly what you owe (or don’t owe).
 
 ### 3. Expanded Coverage: HELOCs and Reverse Mortgages
@@ -1503,6 +1502,130 @@ For adjustable-rate mortgages (ARMs) and HELOCs, servicers must now file a notic
 ## Why This Matters
 
 These rules turn the tables on banks. Instead of you having to guess what you owe, the burden is now firmly on the servicer to prove their math is correct. If they fail to follow these strict procedural rules, we can use their failure to save you thousands of dollars in unjustified fees.
+`
+  },
+  {
+    slug: "cash-advance-not-a-loan-refund",
+    title: "Told Your Cash Advance App Isn’t a ‘Loan’? Why You May Be Owed a Full Refund of Every Fee You Paid",
+    category: "Fintech",
+    relatedSlugs: ["cash-advance-app-usury-tila", "express-fee-illegal-interest", "ewa-usury"],
+    featuredSnippet: {
+      question: "Can I get a refund of fees paid to cash advance apps?",
+      answer: "Yes. If a court determines that a cash advance app is actually a lender, its ‘fees’ and ‘tips’ are legally considered interest. In New York, if this interest exceeds the 16% usury cap, the entire loan contract may be void, and you may be entitled to a full refund of all fees paid."
+    },
+    content: `
+# Told Your Cash Advance App Isn’t a ‘Loan’? Why You May Be Owed a Full Refund
+
+Fintech apps like Dave, EarnIn, and MoneyLion often use a specific legal defense to avoid regulation: they claim they aren’t “lenders” and their advances aren’t “loans.” Instead, they call them “non-recourse transfers” or “earned wage access.”
+
+By avoiding the “loan” label, they attempt to bypass the **Truth in Lending Act (TILA)** and state **usury laws**. But the law looks at the *substance* of a transaction, not just the label the company puts on it.
+
+## The “Not a Loan” Defense Is Crumbling
+
+Courts and regulators are increasingly seeing through this wordplay. If an app provides you money that you are expected to pay back (usually via an automatic debit on your next payday), it is extending credit. 
+
+If it is credit, then:
+1.  **Usury Caps Apply:** In New York, the civil usury limit is **16% APR**. If your “tips” and “express fees” add up to more than that, the loan is usurious.
+2.  **TILA Disclosures Are Mandatory:** The app must provide a clear, written disclosure of the APR. Almost none of them do.
+
+## Why You May Be Owed a Full Refund
+
+Under New York law (**N.Y. Gen. Oblig. Law § 5-511**), a loan that violates the usury cap is **void from the beginning**. This means the lender has no legal right to collect the principal *or* the interest.
+
+If we can prove the app is a lender:
+*   **Restitution:** You can seek a refund of every “tip,” “service fee,” and “express fee” you have ever paid to the app.
+*   **Debt Cancellation:** Any current balance you owe could be wiped out entirely.
+*   **Statutory Penalties:** Under TILA, you can seek additional damages for the failure to provide proper disclosures.
+
+## How We Prove It
+
+We look for “Dark Patterns” in the app’s design. For example, if the app makes it difficult to “opt-out” of a tip, or if “Express Delivery” is the only way to get the money in time to pay a bill, those fees are not truly optional—they are the cost of credit.
+
+If you have paid hundreds of dollars in fees to these apps over the last year, you aren’t just a customer; you may be a victim of predatory lending with a right to a full refund.
+`
+  },
+  {
+    slug: "express-fee-illegal-interest",
+    title: "Is a $5 Cash Advance ‘Express Fee’ Actually an Illegal 400% Interest Rate?",
+    category: "Fintech",
+    relatedSlugs: ["cash-advance-app-usury-tila", "cash-advance-not-a-loan-refund", "ewa-usury"],
+    featuredSnippet: {
+      question: "Is a $5 fee on a $50 cash advance illegal?",
+      answer: "When a $5 fee is charged for a $50 advance repaid in one week, the effective APR is 520%. In New York, where the civil usury cap is 16%, this fee structure is likely illegal if the app is deemed a lender."
+    },
+    content: `
+# Is a $5 “Express Fee” Actually an Illegal 400% Interest Rate?
+
+Cash advance apps rely on the “small dollar” illusion. A $5 fee sounds reasonable. A $2 tip seems harmless. But when you calculate the **Annual Percentage Rate (APR)**—the standard way the law measures the cost of money—the numbers are shocking.
+
+## The Math of Predatory Fintech
+
+Let’s look at a typical transaction:
+*   **Advance Amount:** $50
+*   **Express Fee:** $5
+*   **Repayment Term:** 7 days (until your next paycheck)
+
+To find the APR, we look at how many “7-day periods” are in a year (52) and multiply the cost. In this case, you are paying 10% of the loan amount for just one week of use. 
+**10% x 52 weeks = 520% APR.**
+
+## New York’s Line in the Sand
+
+New York has some of the strictest usury laws in the country to prevent exactly this kind of “payday” lending:
+*   **Civil Usury Cap:** 16% APR (N.Y. Gen. Oblig. Law § 5-501)
+*   **Criminal Usury Cap:** 25% APR (N.Y. Penal Law § 190.40)
+
+At **520%**, a $5 fee isn’t just high—it is **20 times higher** than the criminal usury limit.
+
+## The “Optional” Fee Myth
+
+Apps argue these fees aren’t interest because they are “optional.” However, if the “standard” free delivery takes 3–5 business days, it is useless for someone facing an immediate overdraft or a late utility bill. For the consumer in crisis, the “Express Fee” is a mandatory cost of credit.
+
+## Your Rights
+
+If you are in New York and an app is charging you fees that result in a triple-digit APR, you have rights:
+1.  **The Right to Sue:** You can bring a claim to have the debt declared void.
+2.  **The Right to Disclosures:** Under the federal **Truth in Lending Act (TILA)**, you were entitled to see that 520% APR figure *before* you took the money.
+3.  **The Right to Damages:** You can seek the return of fees and additional statutory penalties.
+
+Don’t let the “small” dollar amounts fool you. Predatory lending is illegal in New York, whether it comes from a storefront or a smartphone app.
+`
+  },
+  {
+    slug: "stop-online-lender-bank-drain",
+    title: "How to Stop an Online Lender From Emptying Your Bank Account: Your Rights Under New York and Federal Law",
+    category: "Fintech",
+    relatedSlugs: ["zombie-subscriptions-stop-payment", "neobank-freeze", "fair-act-ny"],
+    featuredSnippet: {
+      question: "How do I stop an online lender from debiting my bank account?",
+      answer: "You have the right to revoke ACH authorization at any time under Regulation E. You must notify the lender in writing and tell your bank to ‘Stop Payment’ on all future drafts from that company. If they continue to debit your account, they are in violation of federal law."
+    },
+    content: `
+# How to Stop an Online Lender From Emptying Your Bank Account
+
+Many online lenders and cash advance apps require you to sign an **ACH Authorization** as a condition of getting the money. This gives them a “key” to your bank account, allowing them to pull funds whenever they decide you owe them. 
+
+If you find yourself in a financial crisis where these automatic debits are causing you to bounce rent checks or miss essential bills, you have the power to “change the locks.”
+
+## 1. Revoke Authorization (The Federal Right)
+Under **Regulation E (12 C.F.R. § 1005.10)**, you have the right to revoke a lender’s authorization to take money from your account. 
+*   **The Step:** Send a written notice to the lender stating: *“I am revoking my authorization for [Company Name] to initiate any further ACH debits from my account ending in [Last 4 Digits].”*
+*   **The Effect:** Once they receive this, any further attempt to pull money is an **unauthorized electronic fund transfer**.
+
+## 2. The “Stop Payment” Order
+Federal law also requires your bank to honor your request to stop a specific recurring payment.
+*   **The Step:** Notify your bank at least 3 business days before the scheduled transfer. You can do this orally, but the bank may require a written follow-up within 14 days.
+*   **The Cost:** Banks may charge a small fee for a Stop Payment, but it is far less than the cost of a drained account or multiple overdrafts.
+
+## 3. New York’s 2026 FAIR Act Protection
+As of February 2026, New York’s **FAIR Act** provides additional protection against “Abusive” practices. If a lender uses their ACH access to “drain” your account knowing that it will leave you unable to pay for basic necessities like food or shelter, their conduct may be legally classified as **Abusive**.
+
+## What if They Keep Taking Money?
+If a lender ignores your revocation or if your bank fails to honor a Stop Payment:
+1.  **Regulation E Dispute:** File a formal dispute with your bank for an “unauthorized transfer.”
+2.  **Provisional Credit:** The bank must generally put the money back in your account within 10 business days while they investigate.
+3.  **Litigate:** If the lender continues to “hit” your account after you’ve revoked access, they are in willful violation of the **Electronic Fund Transfer Act (EFTA)**. You can sue for actual damages, statutory damages, and attorney’s fees.
+
+**Important:** Revoking ACH authorization does not “delete” the debt, but it gives you control over *when* and *how* you pay, preventing a predatory lender from prioritizing their profit over your survival.
 `
   }
 ];
