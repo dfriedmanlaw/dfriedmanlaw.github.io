@@ -15,20 +15,6 @@ const title = `${resource.title} | Law Office of David Friedman`;
 const description = resource.featuredSnippet?.answer || resource.content.substring(0, 160).replace(/[#*`]/g, '').trim();
 ---
 
-<Layout title={title} description={description}>
-	{resource.featuredSnippet && (
-		<script type="application/ld+json" is:inline set:html={JSON.stringify({
-			"@context": "https://schema.org",
-			"@type": "FAQPage",
-			"mainEntity": [{
-				"@type": "Question",
-				"name": resource.featuredSnippet.question,
-				"acceptedAnswer": {
-					"@type": "Answer",
-					"text": resource.featuredSnippet.answer
-				}
-			}]
-		})} />
-	)}
+<Layout title={title} description={description} faq={resource.featuredSnippet ? [resource.featuredSnippet] : []}>
 	<ResourcePage slug={resource.slug} />
 </Layout>
