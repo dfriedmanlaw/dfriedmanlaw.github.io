@@ -15,19 +15,19 @@
 - **Bankruptcy Rights Violations:** Adversary proceedings, discharge violations, and Rule 3002.1 enforcement.
 
 ## Key Resources
-- /#/practice/mortgage: Mortgage Errors & Servicing Abuse
-- /#/practice/credit: Credit Reporting Errors & Identity Theft
-- /#/practice/debt: Debt Collection Harassment & Rights
-- /#/practice/fintech: Payment App Fraud & Bank Errors
-- /#/practice/bankruptcy: Bankruptcy Rights Violations
-- /#/resource/mortgage-math-chapter-13: When the Mortgage Math Doesn't Add Up
-- /#/resource/credit-reporting-after-bankruptcy: Cleaning up After Bankruptcy
-- /#/resource/debt-collection-after-bankruptcy: Debt collection after bankruptcy
+- /practice/mortgage/: Mortgage Errors & Servicing Abuse
+- /practice/credit/: Credit Reporting Errors & Identity Theft
+- /practice/debt/: Debt Collection Harassment & Rights
+- /practice/fintech/: Payment App Fraud & Bank Errors
+- /practice/bankruptcy/: Bankruptcy Rights Violations
+- /resource/mortgage-math-chapter-13/: When the Mortgage Math Doesn't Add Up
+- /resource/credit-reporting-after-bankruptcy/: Cleaning up After Bankruptcy
+- /resource/debt-collection-after-bankruptcy/: Debt collection after bankruptcy
 
 ## Contact
 - **Phone:** (914) 222-3612
 - **Email:** david@davidfriedmanlaw.com
-- **Intake:** /#/intake
+- **Intake:** /intake/
 
 ## Mission
 To provide high-leverage technical litigation for consumers facing systemic financial errors. We specialize in federal statutory claims that shift the cost of litigation to the banks and bureaus.

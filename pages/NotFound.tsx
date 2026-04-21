@@ -15,7 +15,7 @@ const NotFound: React.FC = () => {
         <Link to="/">
             <Button variant="primary">Return Home</Button>
         </Link>
-        <Link to="/library">
+        <Link to="/library/">
             <Button variant="outline">Browse Library</Button>
         </Link>
       </div>
@@ -23,11 +23,11 @@ const NotFound: React.FC = () => {
       <div className="max-w-2xl w-full text-left border-t border-tech-border pt-8">
         <h3 className="text-sm font-bold text-tech-muted uppercase tracking-widest mb-4 text-center">Popular Resources</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Link to="/resource/notice-of-error-guide" className="p-4 bg-white border border-tech-border rounded-lg hover:border-tech-primary transition-colors group">
+            <Link to="/resource/notice-of-error-guide/" className="p-4 bg-white border border-tech-border rounded-lg hover:border-tech-primary transition-colors group">
                 <span className="font-bold text-tech-text group-hover:text-tech-primary block mb-1">Mortgage Notice of Error Guide</span>
                 <span className="text-xs text-tech-muted">How to trigger RESPA protections</span>
             </Link>
-            <Link to="/resource/fintech-provisional-credit-10-day-rule" className="p-4 bg-white border border-tech-border rounded-lg hover:border-tech-primary transition-colors group">
+            <Link to="/resource/fintech-provisional-credit-10-day-rule/" className="p-4 bg-white border border-tech-border rounded-lg hover:border-tech-primary transition-colors group">
                 <span className="font-bold text-tech-text group-hover:text-tech-primary block mb-1">The 10-Day Rule</span>
                 <span className="text-xs text-tech-muted">Getting your frozen money back</span>
             </Link>
