@@ -13,8 +13,12 @@ export function getStaticPaths() {
 const { area } = Astro.props;
 const title = `${area.title} | Law Office of David Friedman`;
 const description = area.description;
+
+const breadcrumb = [
+  { name: area.title, item: `https://davidfriedmanlaw.com/practice/${area.id}/` }
+];
 ---
 
-<Layout title={title} description={description}>
+<Layout title={title} description={description} breadcrumb={breadcrumb}>
 	<PracticePage id={area.id} />
 </Layout>

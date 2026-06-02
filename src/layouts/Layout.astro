@@ -4,14 +4,37 @@ interface Props {
 	description?: string;
 	canonicalURL?: string;
 	faq?: { question: string; answer: string }[];
+	breadcrumb?: { name: string; item: string }[];
 }
 
 const { 
 	title = "Law Office of David Friedman | Consumer Protection Attorney New York",
 	description = "Law Office of David Friedman - Specialized consumer protection attorney in New York and Minnesota. Expertise in mortgage errors, credit reporting, and debt collection defense.",
 	canonicalURL = Astro.url.href.endsWith('/') ? Astro.url.href : `${Astro.url.href}/`,
-	faq = []
+	faq = [],
+	breadcrumb = []
 } = Astro.props;
+
+const defaultBreadcrumbs = [
+	{ name: 'Home', item: 'https://davidfriedmanlaw.com/' }
+];
+
+const combinedBreadcrumbs = breadcrumb.length > 0 
+	? [...defaultBreadcrumbs, ...breadcrumb]
+	: Astro.url.pathname !== '/' 
+		? [...defaultBreadcrumbs, { name: title.split('|')[0].trim(), item: canonicalURL }]
+		: defaultBreadcrumbs;
+
+const breadcrumbSchema = {
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": combinedBreadcrumbs.map((b, i) => ({
+		"@type": "ListItem",
+		"position": i + 1,
+		"name": b.name,
+		"item": b.item
+	}))
+};
 
 const defaultFaqs = [
 	{
@@ -91,61 +114,11 @@ import '../../globals.css';
 		<script type="application/ld+json">
 		{
 			"@context": "https://schema.org",
-			"@type": "LegalService",
-			"name": "Law Office of David Friedman",
-			"description": "Specialized consumer protection attorney in New York and Minnesota.",
-			"url": "https://davidfriedmanlaw.com",
-			"telephone": "+1-914-222-3612",
-			"email": "david@davidfriedmanlaw.com",
-			"address": {
-				"@type": "PostalAddress",
-				"streetAddress": "4 Westchester Park Drive, Suite 155",
-				"addressLocality": "White Plains",
-				"addressRegion": "NY",
-				"postalCode": "10604",
-				"addressCountry": "US"
-			},
-			"geo": {
-				"@type": "GeoCoordinates",
-				"latitude": 41.0339,
-				"longitude": -73.7629
-			},
-			"openingHoursSpecification": {
-				"@type": "OpeningHoursSpecification",
-				"dayOfWeek": [
-					"Monday",
-					"Tuesday",
-					"Wednesday",
-					"Thursday",
-					"Friday"
-				],
-				"opens": "09:00",
-				"closes": "17:00"
-			},
-			"sameAs": [
-				"https://davidfriedmanlaw.com"
-			]
-		}
-		</script>
-
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=385295510"></script>
-		<script is:inline>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', '385295510');
-		</script>
-
-		<!-- JSON-LD Structured Data for Generative SEO -->
-		<script type="application/ld+json">
-		{
-			"@context": "https://schema.org",
-			"@type": "Attorney",
+			"@type": ["LegalService", "Attorney"],
 			"name": "Law Office of David Friedman, PLLC",
 			"url": "https://davidfriedmanlaw.com",
 			"image": "https://davidfriedmanlaw.com/david-friedman.png",
-			"description": "David Friedman is a consumer protection attorney in New York specializing in Mortgage Errors, Credit Reporting Errors, Debt Harassment, Payment App Fraud, and Bankruptcy Rights Violations.",
+			"description": "David Friedman is a consumer protection attorney in New York and Minnesota specializing in Mortgage Errors, Credit Reporting Errors, Debt Harassment, Payment App Fraud, and Bankruptcy Rights Violations.",
 			"address": {
 				"@type": "PostalAddress",
 				"streetAddress": "4 Westchester Park Drive, Suite 155",
@@ -200,12 +173,27 @@ import '../../globals.css';
 				"FDCPA", 
 				"RESPA", 
 				"Class Actions"
+			],
+			"sameAs": [
+				"https://davidfriedmanlaw.com"
 			]
 		}
 		</script>
 
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=385295510"></script>
+		<script is:inline>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', '385295510');
+		</script>
+
 		<!-- FAQ Structured Data -->
 		<script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
+
+		<!-- Breadcrumb Structured Data -->
+		<script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbSchema)} />
 
 		
 		<!-- Fonts: Lora & Inter -->

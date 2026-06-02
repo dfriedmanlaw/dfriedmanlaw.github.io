@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import BusinessCardTool from '@/src/components/BusinessCardTool';
+---
+
+<Layout 
+  title="Business Card Design | Law Office of David Friedman" 
+  description="Preview and export your professional business card design, optimized for Moo.com."
+>
+  <main class="py-12 bg-tech-bg">
+    <BusinessCardTool client:load />
+  </main>
+</Layout>

@@ -13,8 +13,13 @@ export function getStaticPaths() {
 const { resource } = Astro.props;
 const title = `${resource.title} | Law Office of David Friedman`;
 const description = resource.featuredSnippet?.answer || resource.content.substring(0, 160).replace(/[#*`]/g, '').trim();
+
+const breadcrumb = [
+  { name: 'Library', item: 'https://davidfriedmanlaw.com/library/' },
+  { name: resource.title, item: `https://davidfriedmanlaw.com/resource/${resource.slug}/` }
+];
 ---
 
-<Layout title={title} description={description} faq={resource.featuredSnippet ? [resource.featuredSnippet] : []}>
+<Layout title={title} description={description} faq={resource.featuredSnippet ? [resource.featuredSnippet] : []} breadcrumb={breadcrumb}>
 	<ResourcePage slug={resource.slug} />
 </Layout>
