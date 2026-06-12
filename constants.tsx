@@ -2,9 +2,7 @@ import React from 'react';
 import { Home, CreditCard, PhoneOff, Smartphone, Scale, ArrowRight } from 'lucide-react';
 import { NavItem, PracticeArea } from './types';
 
-export const FILLOUT_URL = "https://forms.fillout.com/t/oHEig2YTTGus";
-// Formspree will send a verification email to this address upon first submission
-export const FORM_ENDPOINT = "https://formspree.io/david@davidfriedmanlaw.com"; 
+export const FILLOUT_URL = "https://davidfriedman.fillout.com/t/rtRrLatBaJus";
 
 export const NAV_ITEMS: NavItem[] = [
   { 
