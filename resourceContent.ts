@@ -42,7 +42,7 @@ EWAs can also create cycles of reborrowing. A worker who cannot cover an expense
 
 Some of the most prevalent EWA providers are EarnIn, Brigit, Dave, and Clair. Many operate through payroll and time tracking apps like Gusto or Homebase.
 
-<iframe src="https://davidfriedman.fillout.com/t/rtRrLatBaJus" width="100%" height="600px" style="border:none; border-radius: 8px; margin: 2rem 0;" title="Calculate Your True New York APR"></iframe>
+<iframe src="https://davidfriedman.fillout.com/t/jTvezcL9oCus" width="100%" height="600px" style="border:none; border-radius: 8px; margin: 2rem 0;" title="Calculate Your True New York APR"></iframe>
 
 ## Are cash advance apps legal in New York?
 
