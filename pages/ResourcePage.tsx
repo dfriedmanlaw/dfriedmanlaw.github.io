@@ -1,5 +1,6 @@
 import React from 'react';
 import Markdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
 import { RESOURCES } from '../resourceContent';
 import { PRACTICE_AREAS } from '../constants';
 import Button from '../components/Button';
@@ -76,6 +77,7 @@ const ResourcePage: React.FC<ResourcePageProps> = ({ slug: propSlug }) => {
 
           <div className="prose prose-lg prose-stone max-w-none font-serif">
             <Markdown 
+                rehypePlugins={[rehypeRaw]}
                 components={{
                     h1: ({node, ...props}) => <h1 className="text-3xl font-bold mt-8 mb-4 font-serif text-tech-text" {...props} />,
                     h2: ({node, ...props}) => <h2 className="text-2xl font-bold mt-8 mb-4 font-serif text-tech-text border-b border-tech-border pb-2" {...props} />,
