@@ -11,6 +11,73 @@ export interface ResourceContent {
 }
 
 export const RESOURCES: ResourceContent[] = [
+  // Fintech
+    {
+    slug: "ewa-payday-loans-ny",
+    title: "Earned Wage Advances or Payday Loan Apps in New York: What You Need to Know",
+    category: "Fintech",
+    relatedSlugs: ["ewa-usury", "cash-advance-app-usury-tila", "fair-act-ny"],
+    featuredSnippet: {
+      question: "Are Earned Wage Advances (EWAs) considered payday loans under New York Law?",
+      answer: "Yes. While EWA apps claim they aren't traditional lenders, New York regulators and the Attorney General treat them as payday lenders if their combined 'tips,' 'expedite fees,' and subscription charges exceed state usury caps (16% civil, 25% criminal APR)."
+    },
+    content: `
+# Earned Wage Advances or Payday Loan Apps in New York: What You Need to Know
+
+## What are Earned Wage Advances?
+
+Earned wage advances (EWAs), sometimes called payday loan apps, provide people with access to money before their next payday. Essentially, EWAs are short-term payday loans for people who cannot afford to wait for their next paycheck.
+
+Many EWAs operate through agreements with employers and are integrated into the employer’s time-and-attendance systems. In some cases, the EWA lender advances cash to the borrower and the advance is repaid directly from the borrower’s next paycheck. In other cases, direct-to-consumer apps debit the borrower’s bank account on the date it expects the paycheck to be deposited. 
+
+Most EWAs charge “expedite fees” if the borrower wants the money immediately. Because EWAs are used by people who can’t wait for payday, studies show that up to 90% of borrowers pay these fees.
+
+EWA payday loans also rely on purportedly voluntary “tips” or “donations” from borrowers. A default tip is often preselected, and providers use various methods to make it difficult to decline tipping. Consumers may believe that their future access to the service will be cut off if they don’t tip, or they may have to navigate multiple screens or dark patterns to avoid paying a tip altogether. 
+
+Proponents of EWAs market them as a less expensive alternative to traditional payday loans. However, EWAs can still be extraordinarily expensive. A California study found that the average annual percentage rate for EWAs exceeded 330%. Pricing is particularly abusive because it is so non-transparent, with lenders obscuring the true costs by labeling finance charges as expedite fees or tips.
+
+EWAs can also create cycles of reborrowing. A worker who cannot cover an expense with their current paycheck and draws on next week’s earnings is likely to face a shortfall when the next paycheck arrives, leading to another advance. As a result, many EWA transactions are driven by the shortfall caused by the previous loan rather than by new financial need. Workers who don’t earn enough to meet regular expenses may find themselves trapped in a cycle of repeated borrowing.
+
+## Who are the most common EWA lenders?
+
+Some of the most prevalent EWA providers are EarnIn, Brigit, Dave, and Clair. Many operate through payroll and time tracking apps like Gusto or Homebase.
+
+<iframe src="https://davidfriedman.fillout.com/t/rtRrLatBaJus" width="100%" height="600px" style="border:none; border-radius: 8px; margin: 2rem 0;" title="Calculate Your True New York APR"></iframe>
+
+## Are cash advance apps legal in New York?
+
+Traditional payday lending is completely illegal in New York. While cash advance apps try to skirt this by claiming they aren't "lenders", New York regulatory bodies and the New York Attorney General treat them as payday lenders if their total charges exceed state usury caps. Furthermore, companies offering consumer loans in New York must be licensed by the New York State Department of Financial Services. If an app is operating without a license or charging illegal rates, they are violating the law. 
+
+## Does New York law allow EWAs to charge interest?
+
+New York has some of the strictest usury laws in the country. The **civil usury cap is 16%** APR, and the **criminal usury cap is 25% APR**. When you add up the "expedite fees," "subscription fees," and "tips" charged by cash advance apps, the actual APR frequently spikes into the triple digits—far exceeding New York's legal limit. 
+
+## Can EWAs charge “expedite” or “instant transfer” fees in New York?
+
+Cash advance apps claim these fees are purely for convenience. However, the New York Attorney General has actively sued major fintech firms (including DailyPay and MoneyLion), alleging that these "expedite fees" are simply disguised interest meant to bypass New York usury laws. If a fee must be paid to access your wages when you need them, New York enforcement treats it as a finance charge. 
+
+## Are "tips" on cash advance apps really voluntary?
+
+EWA apps claim tips are completely voluntary. In practice, however, providers may use default settings, prompts, or other techniques that make tipping difficult to avoid. Regulators and courts look at the reality, not the label: if an app blocks you from higher advance limits or throttles your service for failing to tip, those tips are treated as part of the cost of the loan. 
+
+## What happens if I don’t pay back a cash advance app?
+
+Many EWA providers claim their advances are "non-recourse," meaning they will not sue borrowers or send them to collections. However, even if they don't take you to court, they will use aggressive automated methods to get their money back, such as repeatedly attempting to hit your bank account—which often triggers expensive bank overdraft fees—or locking you out of the app entirely. 
+
+## How can I stop a cash advance app from taking money out of my account?
+
+EWA lenders make it exceedingly difficult to revoke authorization in time to stop a scheduled payment. Under federal law (Regulation E) and New York consumer law, you have the right to stop automatic debits from your bank account.
+
+You should revoke authorization through the EWA app or customer service email, keeping screenshots of your request. If the app debits your account anyway, notify your bank immediately in writing, provide your proof of revocation, and instruct them to block the unauthorized transaction.
+
+## Stripped of Your Wages? We Can Help.
+
+If a cash advance app has trapped you in a debt loop, repeatedly drained your New York bank account after you told them to stop, or charged you astronomical hidden fees, you may have legal recourse under New York's strict usury and consumer protection laws. 
+
+Scroll back up to use our **True APR Calculator**, or click below to securely upload your screenshots so our legal team can review your case.
+`
+  },
+  
   // Mortgage Servicing
   {
     slug: "notice-of-error-guide",

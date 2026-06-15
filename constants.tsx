@@ -209,6 +209,7 @@ export const PRACTICE_AREAS: PracticeArea[] = [
         }
       ],
       resources: [
+        { title: "Earned Wage Advances or Payday Loan Apps in New York: What You Need to Know", slug: "ewa-payday-loans-ny" },
         { title: "Hidden Interest: Suing Cash Advance Apps for Usury and TILA Violations", slug: "cash-advance-app-usury-tila" },
         { title: "Told Your Cash Advance App Isn’t a ‘Loan’? Why You May Be Owed a Full Refund", slug: "cash-advance-not-a-loan-refund" },
         { title: "Is a $5 Cash Advance ‘Express Fee’ Actually an Illegal 400% Interest Rate?", slug: "express-fee-illegal-interest" },
