@@ -93,17 +93,30 @@ const ResourcePage: React.FC<ResourcePageProps> = ({ slug: propSlug }) => {
             </Markdown>
           </div>
 
-          {/* CTA Box */}
-          <div className="mt-16 bg-white border border-tech-border p-8 rounded-xl shadow-lg">
-              <h3 className="text-xl font-serif font-bold text-tech-text mb-4">
-                  Need Legal Help with This Issue?
+          {/* Referrals & Co-Counsel Box */}
+          <div className="mt-16 bg-white border border-tech-border p-8 rounded-xl shadow-lg space-y-4">
+              <div className="text-xs font-sans font-bold uppercase tracking-wider text-tech-primary bg-tech-surface border border-tech-border px-3 py-1 rounded-full inline-block">
+                  Referring Counsel Notice
+              </div>
+              <h3 className="text-xl font-serif font-bold text-tech-text">
+                  Attorney Referrals & Co-Counsel Inquiries Only
               </h3>
-              <p className="text-tech-muted mb-6 font-sans leading-relaxed">
-                  If you are facing this problem, you may have a claim for statutory damages. Our intake process is digital, secure, and encrypted.
+              <p className="text-tech-muted font-sans leading-relaxed">
+                  The Law Office of David Friedman is not currently accepting direct inquiries or consultations from prospective clients. We welcome attorney referrals and co-counsel collaborations—referring counsel may reach out directly via email to discuss potential matters.
               </p>
-              <Link to="/intake/" className="block sm:inline-block">
-                <Button>Evaluate My Case</Button>
-              </Link>
+              <div className="pt-2 border-t border-tech-border flex flex-col sm:flex-row sm:items-center gap-4 justify-between">
+                  <div>
+                      <a href="mailto:david@davidfriedmanlaw.com" className="text-sm font-bold text-tech-primary hover:underline block">
+                          david@davidfriedmanlaw.com
+                      </a>
+                      <a href="tel:914-222-3612" className="text-sm font-bold text-tech-text hover:text-tech-primary transition-colors block">
+                          (914) 222-3612
+                      </a>
+                  </div>
+                  <a href="mailto:david@davidfriedmanlaw.com" className="block sm:inline-block">
+                      <Button>Email David Friedman</Button>
+                  </a>
+              </div>
           </div>
 
           {/* Related Resources */}

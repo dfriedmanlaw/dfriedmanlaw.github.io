@@ -140,8 +140,8 @@ const Navbar: React.FC = () => {
 
         {/* Action */}
         <div className="hidden md:block">
-            <Link to="/intake/">
-                <Button size="sm" variant="primary">Evaluate Case</Button>
+            <Link to="/contact/">
+                <Button size="sm" variant="primary">Attorney Referrals</Button>
             </Link>
         </div>
 
@@ -204,8 +204,8 @@ const Navbar: React.FC = () => {
                     </div>
                 ))}
                 <div className="pt-4">
-                    <Link to="/intake/" className="block w-full">
-                        <Button size="lg" variant="primary" className="w-full justify-center">Evaluate Case</Button>
+                    <Link to="/contact/" className="block w-full">
+                        <Button size="lg" variant="primary" className="w-full justify-center">Attorney Referrals</Button>
                     </Link>
                 </div>
             </nav>

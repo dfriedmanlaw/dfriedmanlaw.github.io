@@ -2,8 +2,6 @@ import React from 'react';
 import { Home, CreditCard, PhoneOff, Smartphone, Scale, ArrowRight } from 'lucide-react';
 import { NavItem, PracticeArea } from './types';
 
-export const FILLOUT_URL = "https://davidfriedman.fillout.com/t/rtRrLatBaJus";
-
 export const NAV_ITEMS: NavItem[] = [
   { 
     label: 'Practice Areas', 

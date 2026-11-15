@@ -27,7 +27,8 @@
 ## Contact
 - **Phone:** (914) 222-3612
 - **Email:** david@davidfriedmanlaw.com
-- **Intake:** /intake/
+- **Attorney Referrals & Co-Counsel:** /contact/
+- **Notice:** Currently accepting attorney referrals and co-counsel inquiries only. Direct client intake is paused.
 
 ## Mission
 To provide high-leverage technical litigation for consumers facing systemic financial errors. We specialize in federal statutory claims that shift the cost of litigation to the banks and bureaus.

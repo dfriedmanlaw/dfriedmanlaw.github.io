@@ -42,8 +42,6 @@ EWAs can also create cycles of reborrowing. A worker who cannot cover an expense
 
 Some of the most prevalent EWA providers are EarnIn, Brigit, Dave, and Clair. Many operate through payroll and time tracking apps like Gusto or Homebase.
 
-<iframe src="https://davidfriedman.fillout.com/t/jTvezcL9oCus" width="100%" height="600px" style="border:none; border-radius: 8px; margin: 2rem 0;" title="Calculate Your True New York APR"></iframe>
-
 ## Are cash advance apps legal in New York?
 
 Traditional payday lending is completely illegal in New York. While cash advance apps try to skirt this by claiming they aren't "lenders", New York regulatory bodies and the New York Attorney General treat them as payday lenders if their total charges exceed state usury caps. Furthermore, companies offering consumer loans in New York must be licensed by the New York State Department of Financial Services. If an app is operating without a license or charging illegal rates, they are violating the law. 

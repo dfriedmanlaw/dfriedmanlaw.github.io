@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from './Link';
 import Button from './Button';
-import { FILLOUT_URL } from '../constants';
 
 const Hero: React.FC = () => {
   return (
@@ -33,8 +32,8 @@ const Hero: React.FC = () => {
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                    <Link to="/intake/">
-                        <Button size="lg">Evaluate My Case</Button>
+                    <Link to="/contact/">
+                        <Button size="lg">Attorney Referrals & Co-Counsel</Button>
                     </Link>
                 </div>
             </div>

@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import Link from '../components/Link';
 import Button from '../components/Button';
 
 const AboutPage: React.FC = () => {
@@ -75,7 +74,7 @@ const AboutPage: React.FC = () => {
                         Contact David
                     </h3>
                     <p className="text-sm text-tech-muted mb-6 font-sans">
-                        Available for consultation on FCRA, FDCPA, and RESPA matters.
+                        Available for attorney referrals and co-counsel collaborations on FCRA, FDCPA, and RESPA litigation.
                     </p>
                     
                     <div className="space-y-3 mb-6">
@@ -87,9 +86,9 @@ const AboutPage: React.FC = () => {
                         </a>
                     </div>
 
-                    <Link to="/intake/" className="block">
-                        <Button fullWidth>Evaluate My Case</Button>
-                    </Link>
+                    <a href="mailto:david@davidfriedmanlaw.com" className="block">
+                        <Button fullWidth>Inquire via Email</Button>
+                    </a>
                 </div>
             </div>
 

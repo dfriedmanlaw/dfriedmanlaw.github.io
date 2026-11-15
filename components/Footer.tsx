@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
                     <li><Link to="/" className="hover:text-tech-primary transition-colors">Home</Link></li>
                     <li><Link to="/about/" className="hover:text-tech-primary transition-colors">About Firm</Link></li>
                     <li><Link to="/library/" className="hover:text-tech-primary transition-colors">Resource Library</Link></li>
-                    <li><Link to="/intake/" className="hover:text-tech-primary transition-colors">Case Evaluation</Link></li>
+                    <li><Link to="/contact/" className="hover:text-tech-primary transition-colors">Attorney Referrals</Link></li>
                 </ul>
             </div>
 
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
                         </a>
                     </li>
                     <li className="text-xs text-tech-muted/80 mt-4 border-l-2 border-tech-primary/50 pl-2 italic">
-                        * Appointments by digital intake only.
+                        * Attorney referrals and co-counsel inquiries only.
                     </li>
                 </ul>
             </div>

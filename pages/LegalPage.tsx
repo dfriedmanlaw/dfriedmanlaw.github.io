@@ -40,7 +40,7 @@ const LegalPage: React.FC = () => {
           <section className="mb-8">
             <h2 className="text-xl font-bold text-tech-text mb-4 font-serif">Privacy Policy</h2>
             <p className="mb-4">
-              We respect your privacy. Any information you submit through our intake forms is transmitted via secure, encrypted channels (SSL/TLS) and is used solely for the purpose of evaluating your potential case. We do not sell, rent, or share your personal information with third parties for marketing purposes.
+              We respect your privacy. Any information you submit through this website or email correspondence is used solely for the purpose of evaluating potential legal matters. We do not sell, rent, or share your personal information with third parties for marketing purposes.
             </p>
             <p className="mb-4">
               This website uses Google Analytics to analyze traffic and improve user experience. Google Analytics may use cookies to collect anonymous data about your visit.

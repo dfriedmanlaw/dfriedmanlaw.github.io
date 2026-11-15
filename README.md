@@ -11,7 +11,7 @@ This project is a high-performance, SEO-optimized website built using **Astro** 
 *   **Static Site Generation (SSG):** Built with Astro for lightning-fast performance and perfect SEO crawlability.
 *   **Hub & Spoke Content Model:** Practice area "Hubs" linked to deep-dive "Spoke" resource articles.
 *   **SEO Optimized:** Automated sitemaps, canonical URLs, and comprehensive JSON-LD structured data for `LegalService`, `Attorney`, and `FAQPage`.
-*   **Intake Form Integration:** Secure, encrypted client intake via [Fillout](https://fillout.com).
+*   **Referrals & Co-Counsel:** Dedicated contact flow for attorney referrals and co-counsel inquiries.
 *   **Responsive Design:** Modern, professional interface built with Tailwind CSS v4.
 *   **GitHub Pages Deployment:** Automated deployment via GitHub Actions.
 
@@ -63,7 +63,6 @@ This site is configured for **automated deployment** using GitHub Actions.
 *   **Site URL:** Configured in `astro.config.mjs`.
 *   **Practice Areas:** Defined in `constants.tsx`.
 *   **Resource Library:** Content managed in `resourceContent.ts`.
-*   **Intake Form:** The Fillout form URL is configured in `constants.tsx`.
 
 ## License
 
