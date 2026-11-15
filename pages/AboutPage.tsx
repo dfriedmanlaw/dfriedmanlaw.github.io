@@ -47,6 +47,7 @@ const AboutPage: React.FC = () => {
                         <li>State of Minnesota</li>
                         <li>U.S. District Court for the Southern District of New York (SDNY)</li>
                         <li>U.S. District Court for the District of Minnesota</li>
+                        <li>U.S. District Court for the District of Connecticut</li>
                     </ul>
 
                     <h3 className="text-2xl font-bold text-tech-text mt-12 mb-4">Education</h3>

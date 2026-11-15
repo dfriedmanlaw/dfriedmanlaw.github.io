@@ -57,6 +57,7 @@ const Footer: React.FC = () => {
                 <ul className="space-y-4 text-tech-muted font-sans text-sm">
                     <li className="flex items-center"><span className="w-1.5 h-1.5 bg-tech-primary rounded-full mr-2"></span> New York (SDNY)</li>
                     <li className="flex items-center"><span className="w-1.5 h-1.5 bg-tech-primary rounded-full mr-2"></span> Minnesota</li>
+                    <li className="flex items-center"><span className="w-1.5 h-1.5 bg-tech-primary rounded-full mr-2"></span> U.S. District Court, District of Connecticut</li>
                 </ul>
             </div>
         </div>
