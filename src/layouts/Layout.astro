@@ -111,7 +111,7 @@ import '../../globals.css';
 		<meta property="twitter:image" content="https://davidfriedmanlaw.com/david-friedman.png" />
 
 		<!-- Structured Data (JSON-LD) -->
-		<script type="application/ld+json">
+		<script type="application/ld+json" is:inline>
 		{
 			"@context": "https://schema.org",
 			"@type": ["LegalService", "Attorney"],
@@ -157,6 +157,10 @@ import '../../globals.css';
 				{
 					"@type": "State",
 					"name": "Minnesota"
+				},
+				{
+					"@type": "State",
+					"name": "Connecticut"
 				}
 			],
 			"priceRange": "Contingency Fee",

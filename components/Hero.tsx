@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
                 </h1>
                 
                 <p className="text-lg md:text-xl text-tech-muted max-w-2xl leading-relaxed font-light font-sans">
-                    Specialized federal advocacy for consumer errors involving banks, credit bureaus, and mortgage servicers. Based in New York, serving clients in New York and Minnesota.
+                    Specialized federal advocacy for consumer errors involving banks, credit bureaus, and mortgage servicers. Based in New York, collaborating with counsel on matters in New York, Minnesota, and Connecticut.
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4 pt-2">
