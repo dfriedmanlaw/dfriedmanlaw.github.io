@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
             <div className="lg:col-span-7 flex flex-col justify-center space-y-6 text-center lg:text-left items-center lg:items-start">
                 <div className="inline-flex items-center space-x-3">
                     <span className="text-tech-primary font-sans font-bold text-xs tracking-widest uppercase">
-                        New York Consumer Protection Lawyer
+                        Consumer Protection Lawyer
                     </span>
                     <span className="text-tech-muted font-sans text-xs tracking-widest uppercase">/ EST. 2026</span>
                 </div>

@@ -7,10 +7,10 @@ export const NAV_ITEMS: NavItem[] = [
     label: 'Practice Areas', 
     path: '/#practice',
     children: [
+        { label: 'Fintech Usury & Disguised Loans', path: '/practice/fintech/' },
         { label: 'Mortgage Errors & Servicing Abuse', path: '/practice/mortgage/' },
         { label: 'Credit Reporting Errors & Identity Theft', path: '/practice/credit/' },
         { label: 'Debt Collection Harassment & Rights', path: '/practice/debt/' },
-        { label: 'Fintech Usury & Disguised Loans', path: '/practice/fintech/' },
         { label: 'Bankruptcy Rights Violations', path: '/practice/bankruptcy/' },
     ]
   },
@@ -42,12 +42,56 @@ export const ICONS = {
 
 export const PRACTICE_AREAS: PracticeArea[] = [
   {
+    id: 'fintech',
+    title: 'Fintech Usury & Disguised Loans',
+    subtitle: 'TILA / EFTA / Usury',
+    description: 'Challenging predatory cash advance apps, EWA usury, and unauthorized bank account debits.',
+    iconPath: ICONS.Fintech,
+    isFeatured: true,
+    content: {
+      heroText: "Is Your Cash Advance App a Disguised Payday Lender?",
+      intro: "Fintech apps like Dave, EarnIn, and MoneyLion claim their “tips” and “express fees” aren’t interest. In New York, we know better. Under state usury laws and the federal Truth in Lending Act (TILA), these are often illegal high-interest loans. We litigate to recoup fees, void predatory debt, and hold apps accountable for failing to disclose the true cost of credit.",
+      sections: [
+        {
+          title: "Predatory Fintech Practices",
+          bullets: [
+            { title: "Shadow Loans & Fintech Usury", text: "Apps that offer 'instant' advances often charge fees that, when calculated as an APR, exceed New York’s 16% usury cap. We reclassify these 'tips' as illegal interest to void the underlying debt." },
+            { title: "Unauthorized Account Debits", text: "If a cash advance or EWA app has debited your bank account after you revoked authorization or ignored a stop payment order, they have committed a federal violation under Regulation E." },
+            { title: "The Neobank Freeze", text: "When digital banks like Chime or CashApp freeze your account without providing provisional credit within 10 days, they are violating the EFTA. We litigate to restore access and seek damages for the hardship." },
+            { title: "Payment App Fraud (Zelle/Venmo)", text: "While we focus on usury, we also hold banks accountable for Zelle scams where they refuse to refund victims by claiming the fraud was 'authorized'." }
+          ]
+        },
+        {
+          title: "The “Unfair & Abusive” Standard (New York 2026)",
+          content: "The FAIR Act, effective February 17, 2026, allows us to challenge fintech practices that take unreasonable advantage of a consumer’s lack of understanding. We use this new New York standard to litigate junk fees, deceptive app interfaces (Dark Patterns), and the aggressive steering of consumers into high-cost instant transfers."
+        }
+      ],
+      resources: [
+        { title: "Earned Wage Advances or Payday Loan Apps in New York: What You Need to Know", slug: "ewa-payday-loans-ny" },
+        { title: "Hidden Interest: Suing Cash Advance Apps for Usury and TILA Violations", slug: "cash-advance-app-usury-tila" },
+        { title: "Told Your Cash Advance App Isn’t a ‘Loan’? Why You May Be Owed a Full Refund", slug: "cash-advance-not-a-loan-refund" },
+        { title: "Is a $5 Cash Advance ‘Express Fee’ Actually an Illegal 400% Interest Rate?", slug: "express-fee-illegal-interest" },
+        { title: "Are “Tips” and “Express Fees” on EWA Apps Actually Illegal Usury?", slug: "ewa-usury" },
+        { title: "How to Stop an Online Lender From Emptying Your Bank Account: Your Rights Under New York and Federal Law", slug: "stop-online-lender-bank-drain" },
+        { title: "The 10-Day Rule: When Fintechs Fail to Give Provisional Credit", slug: "fintech-provisional-credit-10-day-rule" },
+        { title: "Locked Out: When a Neobank Freezes Your Rent Money", slug: "neobank-account-freeze" },
+        { title: "Zombie Subscriptions: When the Bank Keeps Paying After You Said Stop", slug: "zombie-subscriptions-stop-payment" },
+        { title: "The Fraud Defense: Getting Your Zelle Money Back", slug: "zelle-fraud-defense" },
+        { title: "What to Do When Your Bank Says a Zelle Scam Was “Authorized”", slug: "zelle-authorized-scam" },
+        { title: "Treble Damages: When a Bank’s Bad Faith Investigation Pays Triple", slug: "treble-damages-bad-faith" }
+      ],
+      referral: {
+        title: "A Technical Resource for Fintech Usury",
+        text: "Many firms view $5 fees as too small to litigate. I view them as the foundation for systemic usury claims. By leveraging New York’s strict interest caps and the federal Truth in Lending Act, I can identify the 'dark patterns' that turn optional tips into mandatory interest. If you have clients trapped in a cycle of fintech debt, I am available for co-counsel or referral to handle the technical usury and TILA litigation."
+      }
+    }
+  },
+  {
     id: 'mortgage',
     title: 'Mortgage Errors & Servicing Abuse',
     subtitle: 'RESPA / Regulation X',
     description: 'Enforcing Regulation X to correct payment misapplications, escrow abuse, and Rule 3002.1 failures in Chapter 13 bankruptcy.',
     iconPath: ICONS.Mortgage,
-    isFeatured: true,
     content: {
       heroText: "Is Your Servicer Making “Mechanical” Errors?",
       intro: "Under the Real Estate Settlement Procedures Act (RESPA) and Regulation X, your mortgage servicer is legally required to accurately credit your payments, maintain your escrow account, and respond to your formal inquiries within strict federal deadlines. If a servicer fails to fix an error after receiving a formal Notice of Error (NOE), they may be liable for statutory damages and your attorney’s fees.",
@@ -179,50 +223,6 @@ export const PRACTICE_AREAS: PracticeArea[] = [
       referral: {
         title: "A Federal Litigation Shop for FDCPA Violations",
         text: "Many general practitioners view debt harassment as a nuisance; I view it as a statutory litigation opportunity. If your client is being sued for a zombie debt that is past the New York 3-year statute of limitations, or if they are facing aggressive collection on a debt they already settled, I can help. I specialize in identifying violations that trigger mandatory attorney’s fees, allowing you to protect your client’s rights without them having to pay out-of-pocket for litigation."
-      }
-    }
-  },
-  {
-    id: 'fintech',
-    title: 'Fintech Usury & Disguised Loans',
-    subtitle: 'TILA / EFTA / Usury',
-    description: 'Challenging predatory cash advance apps, EWA usury, and unauthorized bank account debits.',
-    iconPath: ICONS.Fintech,
-    content: {
-      heroText: "Is Your Cash Advance App a Disguised Payday Lender?",
-      intro: "Fintech apps like Dave, EarnIn, and MoneyLion claim their “tips” and “express fees” aren’t interest. In New York, we know better. Under state usury laws and the federal Truth in Lending Act (TILA), these are often illegal high-interest loans. We litigate to recoup fees, void predatory debt, and hold apps accountable for failing to disclose the true cost of credit.",
-      sections: [
-        {
-          title: "Predatory Fintech Practices",
-          bullets: [
-            { title: "Shadow Loans & Fintech Usury", text: "Apps that offer 'instant' advances often charge fees that, when calculated as an APR, exceed New York’s 16% usury cap. We reclassify these 'tips' as illegal interest to void the underlying debt." },
-            { title: "Unauthorized Account Debits", text: "If a cash advance or EWA app has debited your bank account after you revoked authorization or ignored a stop payment order, they have committed a federal violation under Regulation E." },
-            { title: "The Neobank Freeze", text: "When digital banks like Chime or CashApp freeze your account without providing provisional credit within 10 days, they are violating the EFTA. We litigate to restore access and seek damages for the hardship." },
-            { title: "Payment App Fraud (Zelle/Venmo)", text: "While we focus on usury, we also hold banks accountable for Zelle scams where they refuse to refund victims by claiming the fraud was 'authorized'." }
-          ]
-        },
-        {
-          title: "The “Unfair & Abusive” Standard (New York 2026)",
-          content: "The FAIR Act, effective February 17, 2026, allows us to challenge fintech practices that take unreasonable advantage of a consumer’s lack of understanding. We use this new New York standard to litigate junk fees, deceptive app interfaces (Dark Patterns), and the aggressive steering of consumers into high-cost instant transfers."
-        }
-      ],
-      resources: [
-        { title: "Earned Wage Advances or Payday Loan Apps in New York: What You Need to Know", slug: "ewa-payday-loans-ny" },
-        { title: "Hidden Interest: Suing Cash Advance Apps for Usury and TILA Violations", slug: "cash-advance-app-usury-tila" },
-        { title: "Told Your Cash Advance App Isn’t a ‘Loan’? Why You May Be Owed a Full Refund", slug: "cash-advance-not-a-loan-refund" },
-        { title: "Is a $5 Cash Advance ‘Express Fee’ Actually an Illegal 400% Interest Rate?", slug: "express-fee-illegal-interest" },
-        { title: "Are “Tips” and “Express Fees” on EWA Apps Actually Illegal Usury?", slug: "ewa-usury" },
-        { title: "How to Stop an Online Lender From Emptying Your Bank Account: Your Rights Under New York and Federal Law", slug: "stop-online-lender-bank-drain" },
-        { title: "The 10-Day Rule: When Fintechs Fail to Give Provisional Credit", slug: "fintech-provisional-credit-10-day-rule" },
-        { title: "Locked Out: When a Neobank Freezes Your Rent Money", slug: "neobank-account-freeze" },
-        { title: "Zombie Subscriptions: When the Bank Keeps Paying After You Said Stop", slug: "zombie-subscriptions-stop-payment" },
-        { title: "The Fraud Defense: Getting Your Zelle Money Back", slug: "zelle-fraud-defense" },
-        { title: "What to Do When Your Bank Says a Zelle Scam Was “Authorized”", slug: "zelle-authorized-scam" },
-        { title: "Treble Damages: When a Bank’s Bad Faith Investigation Pays Triple", slug: "treble-damages-bad-faith" }
-      ],
-      referral: {
-        title: "A Technical Resource for Fintech Usury",
-        text: "Many firms view $5 fees as too small to litigate. I view them as the foundation for systemic usury claims. By leveraging New York’s strict interest caps and the federal Truth in Lending Act, I can identify the 'dark patterns' that turn optional tips into mandatory interest. If you have clients trapped in a cycle of fintech debt, I am available for co-counsel or referral to handle the technical usury and TILA litigation."
       }
     }
   },

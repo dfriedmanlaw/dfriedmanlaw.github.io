@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
                 </Link>
                 <div className="h-1 w-20 bg-tech-primary mb-6"></div>
                 <p className="text-tech-muted max-w-md font-sans leading-relaxed">
-                    High-leverage litigation for systemic financial errors. Representing consumers in New York.
+                    High-leverage litigation for systemic financial errors. Representing consumers in New York and Minnesota.
                 </p>
             </div>
 
